@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "32D2C824-AFE7-429F-981F-EA46D18364EB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F718DC88-3A83-4031-A0BE-D8AC3CD220C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "touchUpToBeSeen(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42E2E5C0-2272-4564-9026-E17BD25DACD8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "textFieldDidChange(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0CC0832-48EC-48F3-86C6-6B648A97E788"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AACFFA49-E323-413B-B77B-137954FFA77D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - a125c48c15fc92c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButton.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - 5445dbdd6af522c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButton.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - 7c5c5d82e07420e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButton.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - e83569d66f7e832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButton.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - 70415da8528a740d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SOPT_iOS_HW1.ThirdViewController"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "5E8239DB-0555-400A-BBFD-EBF17F627172 - 93c591b4db450839"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SOPT_iOS_HW1.ThirdViewController&gt;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "257">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SOPT_iOS_HW1/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 579232019f645648"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButtonCheck.getter : Swift.Int"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 1831c080a4230444"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButtonCheck.setter : Swift.Int"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "97">
+               </Location>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 52e076d83c76975b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButtonCheck.modify : Swift.Int"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 605cb0a2917b3890"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.passwordButtonCheck.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 70415da8528a7792"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SOPT_iOS_HW1.ThirdViewController"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "382">
+               </Location>
+               <Location
+                  uuid = "EA215F99-6B31-44C5-A77E-3AD34BF578E5 - 93c591b4db450ba6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SOPT_iOS_HW1.ThirdViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SOPT_iOS_HW1.ThirdViewController&gt;"
+                  moduleName = "SOPT_iOS_HW1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/junholee/Desktop/LeeJunHo/SOPT_iOS_HW1/SOPT_iOS_HW1/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "339">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
