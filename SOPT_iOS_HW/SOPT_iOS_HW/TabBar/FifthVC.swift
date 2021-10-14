@@ -1,5 +1,5 @@
 //
-//  TabBarVC.swift
+//  FifthVC.swift
 //  SOPT_iOS_HW1
 //
 //  Created by Junho Lee on 2021/10/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarVC: UITabBarController {
+class FifthVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

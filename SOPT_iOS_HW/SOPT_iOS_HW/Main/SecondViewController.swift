@@ -30,7 +30,7 @@ class SecondViewController: UIViewController {
     @IBAction func goToTabBarSB(_ sender: Any) {
         let secondStoryboard = UIStoryboard.init(name: "TabBarStoryboard", bundle:nil)
         
-        guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarSB") as? TabBarVC else {return}
+        guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarController") as? TabBarController else {return}
         
         present(nextVC, animated:true, completion:nil)
     }
