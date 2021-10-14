@@ -35,6 +35,12 @@ class SecondViewController: UIViewController {
         present(nextVC, animated:true, completion:nil)
     }
     
+    @IBAction func goBackToLogin(_ sender: Any) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as? FirstViewController else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated:true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

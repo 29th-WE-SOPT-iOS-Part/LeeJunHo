@@ -186,6 +186,9 @@
                                 <state key="normal" title="다른 계정으로 로그인하기">
                                     <color key="titleColor" red="0.25882352941176467" green="0.52156862745098043" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goBackToLogin:" destination="3gZ-30-xDZ" eventType="touchUpInside" id="itz-zt-Q05"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dzD-Pc-U0M"/>
