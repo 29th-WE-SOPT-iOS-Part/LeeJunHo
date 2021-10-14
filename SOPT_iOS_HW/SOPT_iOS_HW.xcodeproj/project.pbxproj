@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */; };
+		EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */; };
+		EB70ACB927188EDE00981D5D /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACB827188EDE00981D5D /* TabBarVC.swift */; };
 		EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDB270DE14B008677B4 /* AppDelegate.swift */; };
 		EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */; };
 		EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB92ADE1270DE14B008677B4 /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarStoryboard.storyboard; sourceTree = "<group>"; };
+		EB70ACB827188EDE00981D5D /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB70ACB1271878B900981D5D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				EB70ACB2271878D900981D5D /* Fonts */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		EB70ACB2271878D900981D5D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EB70ACB327188D1800981D5D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EB92ADE1270DE14B008677B4 /* Main.storyboard */,
+				EB92ADEF270E132E008677B4 /* FirstViewController.swift */,
+				EB92ADF1270E1343008677B4 /* SecondViewController.swift */,
+				EB92ADF5270F6757008677B4 /* ThirdViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		EB92ADCF270DE14B008677B4 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +93,15 @@
 		EB92ADDA270DE14B008677B4 /* SOPT_iOS_HW */ = {
 			isa = PBXGroup;
 			children = (
-				EB92ADF5270F6757008677B4 /* ThirdViewController.swift */,
+				EB70ACB1271878B900981D5D /* SupportingFiles */,
 				EB92ADDB270DE14B008677B4 /* AppDelegate.swift */,
 				EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */,
-				EB92ADE1270DE14B008677B4 /* Main.storyboard */,
+				EB70ACB327188D1800981D5D /* Main */,
+				EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */,
+				EB70ACB827188EDE00981D5D /* TabBarVC.swift */,
 				EB92ADE4270DE14E008677B4 /* Assets.xcassets */,
 				EB92ADE6270DE14E008677B4 /* LaunchScreen.storyboard */,
 				EB92ADE9270DE14E008677B4 /* Info.plist */,
-				EB92ADF1270E1343008677B4 /* SecondViewController.swift */,
-				EB92ADEF270E132E008677B4 /* FirstViewController.swift */,
 			);
 			path = SOPT_iOS_HW;
 			sourceTree = "<group>";
@@ -133,7 +166,9 @@
 			files = (
 				EB92ADE8270DE14E008677B4 /* LaunchScreen.storyboard in Resources */,
 				EB92ADE5270DE14E008677B4 /* Assets.xcassets in Resources */,
+				EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */,
 				EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */,
+				EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +183,7 @@
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,
 				EB92ADF6270F6757008677B4 /* ThirdViewController.swift in Sources */,
 				EB92ADF2270E1343008677B4 /* SecondViewController.swift in Sources */,
+				EB70ACB927188EDE00981D5D /* TabBarVC.swift in Sources */,
 				EB92ADF0270E132E008677B4 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

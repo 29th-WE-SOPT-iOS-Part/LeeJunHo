@@ -10,6 +10,8 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet weak var OKButton: UIButton!
+   
     var message: String?
     
     override func viewDidLoad() {
@@ -25,6 +27,13 @@ class SecondViewController: UIViewController {
         }
     }
     
+    @IBAction func goToTabBarSB(_ sender: Any) {
+        let secondStoryboard = UIStoryboard.init(name: "TabBarStoryboard", bundle:nil)
+        
+        guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarSB") as? TabBarVC else {return}
+        
+        present(nextVC, animated:true, completion:nil)
+    }
     
     /*
     // MARK: - Navigation
