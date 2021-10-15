@@ -25,8 +25,8 @@ class TabBarController: UITabBarController {
         firstVC.tabBarItem.image = UIImage(named: "homeIcon")
         firstVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
         secondVC.tabBarItem.title = "shorts"
-        secondVC.tabBarItem.image = UIImage(named: "shortIcon")
-        secondVC.tabBarItem.selectedImage = UIImage(named: "shortIcon")
+        secondVC.tabBarItem.image = UIImage(named: "shortsIcon")
+        secondVC.tabBarItem.selectedImage = UIImage(named: "shortsIcon")
         thirdVC.tabBarItem.title = "추가"
         thirdVC.tabBarItem.image = UIImage(named: "plueCircleIcon")
         fourthVC.tabBarItem.title = "구독"
