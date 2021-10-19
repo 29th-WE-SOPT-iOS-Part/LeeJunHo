@@ -216,12 +216,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fs4-Lb-Brc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756.9230769230769" y="83.175355450236964"/>
+            <point key="canvasLocation" x="1820" y="83"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qNo-aa-XeE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vti-vS-YHU" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="vti-vS-YHU" customClass="NavigationController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bek-H8-hKE">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>

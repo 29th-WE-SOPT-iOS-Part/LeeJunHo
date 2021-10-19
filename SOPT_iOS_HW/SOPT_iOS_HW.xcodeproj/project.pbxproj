@@ -15,6 +15,7 @@
 		EB70ACC9271898A000981D5D /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACC8271898A000981D5D /* FourthVC.swift */; };
 		EB70ACCB271898AC00981D5D /* FifthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACCA271898AC00981D5D /* FifthVC.swift */; };
 		EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACCC271898C400981D5D /* TabBarController.swift */; };
+		EB70ACCF271B4E9400981D5D /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACCE271B4E9400981D5D /* NavigationController.swift */; };
 		EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDB270DE14B008677B4 /* AppDelegate.swift */; };
 		EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */; };
 		EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB92ADE1270DE14B008677B4 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		EB70ACC8271898A000981D5D /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		EB70ACCA271898AC00981D5D /* FifthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthVC.swift; sourceTree = "<group>"; };
 		EB70ACCC271898C400981D5D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EB70ACCE271B4E9400981D5D /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				EB92ADE1270DE14B008677B4 /* Main.storyboard */,
+				EB70ACCE271B4E9400981D5D /* NavigationController.swift */,
 				EB92ADEF270E132E008677B4 /* FirstViewController.swift */,
 				EB92ADF1270E1343008677B4 /* SecondViewController.swift */,
 				EB92ADF5270F6757008677B4 /* ThirdViewController.swift */,
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */,
+				EB70ACCF271B4E9400981D5D /* NavigationController.swift in Sources */,
 				EB70ACC32718987900981D5D /* FirstVC.swift in Sources */,
 				EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */,
 				EB70ACC52718988700981D5D /* SecondVC.swift in Sources */,

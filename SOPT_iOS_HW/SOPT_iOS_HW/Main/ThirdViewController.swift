@@ -51,7 +51,10 @@ class ThirdViewController: UIViewController {
     @IBAction func touchUpToSendData(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {return}
         
-
+        guard let viewControllers = self.navigationController?.viewControllers else {return}
+        print(viewControllers.count)
+        nextVC.viewcontrollerss = viewControllers
+        
         nextVC.message = nameField.text
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)

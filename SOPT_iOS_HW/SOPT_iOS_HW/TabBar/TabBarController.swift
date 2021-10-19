@@ -21,6 +21,7 @@ class TabBarController: UITabBarController {
               let fourthVC = self.storyboard?.instantiateViewController(identifier:"FourthVC"),
               let fifthVC = self.storyboard?.instantiateViewController(identifier:"FifthVC") else {return}
         
+        UITabBar.appearance().tintColor = UIColor.black
         firstVC.tabBarItem.title = "홈"
         firstVC.tabBarItem.image = UIImage(named: "homeIcon")
         firstVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")

@@ -13,6 +13,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var OKButton: UIButton!
    
     var message: String?
+    var viewcontrollerss : [UIViewController] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,11 +36,17 @@ class SecondViewController: UIViewController {
         present(nextVC, animated:true, completion:nil)
     }
     
+    
     @IBAction func goBackToLogin(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as? FirstViewController else {return}
+        if viewcontrollerss.count == 2 {
+            viewcontrollerss[1].navigationController?.popViewController(animated: false)
+        }
+            
+        guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
         
-        nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated:true, completion: nil)
+        self.dismiss(animated:true) {
+            presentingVC.popToRootViewController(animated: false)
+        }
     }
     /*
     // MARK: - Navigation
