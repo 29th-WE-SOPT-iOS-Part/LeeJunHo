@@ -9,21 +9,35 @@ import UIKit
 
 class SignUpVC: UIViewController {
     
+    //MARK: - TextFields
+    
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
 
     @IBOutlet weak var nextButton: UIButton!
-    
+
+    //MARK: - LifeCycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.nameField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),for:.editingChanged)
-        self.emailField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),for:.editingChanged)
-        self.passwordField.addTarget(self, action: #selector(self.textFieldDidChange(_:)),for:.editingChanged)
-        // Do any additional setup after loading the view.
+        checkToEnableBtn()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setTextFieldEmpty()
+    }
+
+    //MARK: - Custom Methods
+
+    func checkToEnableBtn() {
+        [nameField, emailField, passwordField].forEach {
+            $0.addTarget(self, action:
+                #selector(self.textFieldDidChange(_:)),for:.editingChanged)
+        }
+    }
+ 
     @objc func textFieldDidChange(_ sender:Any?) -> Void {
         if let text1 = nameField.text, let text2 = passwordField.text, let text3=emailField.text {
             if (text1.count>=1)&&(text2.count>=1)&&(text3.count>=1){
@@ -31,36 +45,25 @@ class SignUpVC: UIViewController {
             } else { nextButton.isEnabled=false }
         }
     }
-    
-    
+
     @IBAction func touchUpToSendData(_ sender: Any) {
 
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {return}
-        
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
 
         nextVC.message = nameField.text
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)
     }
-    
-    
+
     @IBAction func touchUpToSignUp(_ sender: Any) {
-        
-        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController") as? ThirdViewController else {return}
-        
+        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else {return}
 
         self.navigationController?.pushViewController(nextVC2, animated: true)
-        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setTextFieldEmpty() {
+        [nameField, emailField, passwordField].forEach {
+            $0.text = ""
+        }
     }
-    */
-
 }

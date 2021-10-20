@@ -9,12 +9,17 @@ import UIKit
 
 class TabBarController: UITabBarController {
 
+    //MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setTabBar()
     }
     
+    //MARK: - Basic Setup
+    
     func setTabBar() {
+        
         guard let firstVC = self.storyboard?.instantiateViewController(identifier:"FirstVC"),
               let secondVC = self.storyboard?.instantiateViewController(identifier:"SecondVC"),
               let thirdVC = self.storyboard?.instantiateViewController(identifier:"ThirdVC"),
@@ -22,6 +27,9 @@ class TabBarController: UITabBarController {
               let fifthVC = self.storyboard?.instantiateViewController(identifier:"FifthVC") else {return}
         
         UITabBar.appearance().tintColor = UIColor.black
+      
+        //MARK: - tabBarItem data
+        
         firstVC.tabBarItem.title = "홈"
         firstVC.tabBarItem.image = UIImage(named: "homeIcon")
         firstVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
@@ -38,7 +46,5 @@ class TabBarController: UITabBarController {
         fifthVC.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
         
         setViewControllers([firstVC, secondVC, thirdVC, fourthVC, fifthVC], animated: true)
-              
     }
-
 }

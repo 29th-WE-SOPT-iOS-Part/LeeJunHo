@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--First View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SingUpVC" id="BYZ-38-t0r" customClass="SignUpVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-am-MKc">
                                 <rect key="frame" x="279" y="567" width="74" height="42"/>
                                 <color key="backgroundColor" red="0.25882352939999997" green="0.52156862749999999" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="F8o-LI-Zvp"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                 <color key="tintColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -116,7 +119,6 @@
                             <constraint firstItem="Yfs-am-MKc" firstAttribute="leading" secondItem="kVq-sc-2dn" secondAttribute="trailing" constant="189" id="V8s-Dh-hfP"/>
                             <constraint firstItem="BBk-Jd-7tc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="WpX-r0-2Us"/>
                             <constraint firstItem="VRp-Th-Tty" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="aii-IF-zEj"/>
-                            <constraint firstAttribute="trailing" secondItem="kVq-sc-2dn" secondAttribute="trailing" constant="285" id="bqf-iB-T9L"/>
                             <constraint firstAttribute="trailing" secondItem="qQr-t5-xUR" secondAttribute="trailing" constant="22" id="eyV-h5-3f8"/>
                             <constraint firstItem="OkF-9i-zYa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="110" id="fy0-3m-qCi"/>
                             <constraint firstAttribute="bottom" secondItem="kVq-sc-2dn" secondAttribute="bottom" constant="214" id="jwo-yp-DnI"/>
@@ -141,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="944.61538461538453" y="83.175355450236964"/>
         </scene>
-        <!--Second View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="vyc-fV-MqV">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="3gZ-30-xDZ" customClass="SecondViewController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WelcomeVC" id="3gZ-30-xDZ" customClass="WelcomeVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2P-zc-6PG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="0xL-ZX-QCB">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" id="dIh-QZ-xEd" customClass="ThirdViewController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" id="dIh-QZ-xEd" customClass="SignInVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1h-Yp-zyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

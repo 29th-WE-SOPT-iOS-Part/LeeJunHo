@@ -9,17 +9,24 @@ import UIKit
 
 class WelcomeVC: UIViewController {
 
+    //MARK: - IBoulets
+    
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var OKButton: UIButton!
    
+    //MARK: - vars / lets
+    
     var message: String?
     var viewcontrollerss : [UIViewController] = []
+    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setMessageInLabel()
-        // Do any additional setup after loading the view.
     }
+    
+    //MARK: - Custom Methods
     
     func setMessageInLabel(){
         if let msg = message{
@@ -30,32 +37,21 @@ class WelcomeVC: UIViewController {
     
     @IBAction func goToTabBarSB(_ sender: Any) {
         let secondStoryboard = UIStoryboard.init(name: "TabBarStoryboard", bundle:nil)
-        
+
         guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarController") as? TabBarController else {return}
         
         present(nextVC, animated:true, completion:nil)
     }
-    
-    
+
     @IBAction func goBackToLogin(_ sender: Any) {
         if viewcontrollerss.count == 2 {
             viewcontrollerss[1].navigationController?.popViewController(animated: false)
         }
-            
+
         guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
-        
+
         self.dismiss(animated:true) {
             presentingVC.popToRootViewController(animated: false)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
