@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class SignInVC: UIViewController {
 
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
@@ -49,7 +49,7 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func touchUpToSendData(_ sender: Any) {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {return}
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? WelcomeVC else {return}
         
         guard let viewControllers = self.navigationController?.viewControllers else {return}
         print(viewControllers.count)

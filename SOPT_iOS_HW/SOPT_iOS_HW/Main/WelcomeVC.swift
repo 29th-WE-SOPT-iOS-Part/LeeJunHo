@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var OKButton: UIButton!
