@@ -13,10 +13,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Sign UpVC-->
+        <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="SingUpVC" id="BYZ-38-t0r" customClass="SignUpVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -238,10 +238,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
-        <!--Sign InVC-->
+        <!--Sign UpVC-->
         <scene sceneID="0xL-ZX-QCB">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" id="dIh-QZ-xEd" customClass="SignInVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" id="dIh-QZ-xEd" customClass="SignUpVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1h-Yp-zyj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

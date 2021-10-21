@@ -1,23 +1,28 @@
 //
-//  FirstViewController.swift
-//  FirstViewController
+//  ThirdViewController.swift
+//  ThirdViewController
 //
-//  Created by Junho Lee on 2021/10/07.
+//  Created by Junho Lee on 2021/10/08.
 //
 
 import UIKit
 
 class SignUpVC: UIViewController {
-    
+
     //MARK: - TextFields
-    
+
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-
+    
+    @IBOutlet weak var passwordButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
+    
+    //MARK: - vars
 
-    //MARK: - LifeCycle
+    private var passwordButtonCheck = 1
+
+    //MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +34,8 @@ class SignUpVC: UIViewController {
         setTextFieldEmpty()
     }
 
-    //MARK: - Custom Methods
+    //MARK: - Custom Method
 
-    func checkToEnableBtn() {
-        [nameField, emailField, passwordField].forEach {
-            $0.addTarget(self, action:
-                #selector(self.textFieldDidChange(_:)),for:.editingChanged)
-        }
-    }
- 
     @objc func textFieldDidChange(_ sender:Any?) -> Void {
         if let text1 = nameField.text, let text2 = passwordField.text, let text3=emailField.text {
             if (text1.count>=1)&&(text2.count>=1)&&(text3.count>=1){
@@ -45,22 +43,40 @@ class SignUpVC: UIViewController {
             } else { nextButton.isEnabled=false }
         }
     }
+    
+    func checkToEnableBtn() {
+        [nameField, emailField, passwordField].forEach {
+            $0.addTarget(self, action:
+                #selector(self.textFieldDidChange(_:)),for:.editingChanged)
+        }
+    }
+
+    @IBAction func touchUpToBeSeen(_ sender: Any) {
+        switch passwordButtonCheck {
+        case 1 :
+            passwordButton.setImage(UIImage(systemName: "checkmark.square.fill"), for: .normal)
+            passwordButtonCheck=2
+            passwordField.isSecureTextEntry = false
+        case 2 :
+            passwordButton.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
+            passwordButtonCheck=1
+            passwordField.isSecureTextEntry = true
+        default: break
+        }
+
+    }
 
     @IBAction func touchUpToSendData(_ sender: Any) {
-
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+
+        guard let viewControllers = self.navigationController?.viewControllers else {return}
+        nextVC.viewcontrollers = viewControllers
 
         nextVC.message = nameField.text
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)
     }
 
-    @IBAction func touchUpToSignUp(_ sender: Any) {
-        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as? SignInVC else {return}
-
-        self.navigationController?.pushViewController(nextVC2, animated: true)
-    }
-    
     func setTextFieldEmpty() {
         [nameField, emailField, passwordField].forEach {
             $0.text = ""

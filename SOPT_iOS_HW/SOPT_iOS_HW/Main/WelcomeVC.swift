@@ -17,7 +17,7 @@ class WelcomeVC: UIViewController {
     //MARK: - vars / lets
     
     var message: String?
-    var viewcontrollerss : [UIViewController] = []
+    var viewcontrollers : [UIViewController] = []
     
     //MARK: - Lifecycle
     
@@ -44,8 +44,8 @@ class WelcomeVC: UIViewController {
     }
 
     @IBAction func goBackToLogin(_ sender: Any) {
-        if viewcontrollerss.count == 2 {
-            viewcontrollerss[1].navigationController?.popViewController(animated: false)
+        if viewcontrollers.count == 2 {
+            viewcontrollers[1].navigationController?.popViewController(animated: false)
         }
 
         guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
