@@ -39,7 +39,7 @@ class WelcomeVC: UIViewController {
         let secondStoryboard = UIStoryboard.init(name: "TabBarStoryboard", bundle:nil)
 
         guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarController") as? TabBarController else {return}
-        
+
         present(nextVC, animated:true, completion:nil)
     }
 

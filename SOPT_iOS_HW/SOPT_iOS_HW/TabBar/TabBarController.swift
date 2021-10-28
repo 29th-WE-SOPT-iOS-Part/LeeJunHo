@@ -19,9 +19,11 @@ class TabBarController: UITabBarController {
     //MARK: - Basic Setup
     
     func setTabBar() {
+        let HomeSB = UIStoryboard.init(name: "HomeStoryboard", bundle:nil)
+
+        let homeVC = HomeSB.instantiateViewController(identifier: "HomeVC")
         
-        guard let firstVC = self.storyboard?.instantiateViewController(identifier:"FirstVC"),
-              let secondVC = self.storyboard?.instantiateViewController(identifier:"SecondVC"),
+        guard let secondVC = self.storyboard?.instantiateViewController(identifier:"SecondVC"),
               let thirdVC = self.storyboard?.instantiateViewController(identifier:"ThirdVC"),
               let fourthVC = self.storyboard?.instantiateViewController(identifier:"FourthVC"),
               let fifthVC = self.storyboard?.instantiateViewController(identifier:"FifthVC") else {return}
@@ -30,9 +32,9 @@ class TabBarController: UITabBarController {
       
         //MARK: - tabBarItem data
         
-        firstVC.tabBarItem.title = "홈"
-        firstVC.tabBarItem.image = UIImage(named: "homeIcon")
-        firstVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
+        homeVC.tabBarItem.title = "홈"
+        homeVC.tabBarItem.image = UIImage(named: "homeIcon")
+        homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
         secondVC.tabBarItem.title = "shorts"
         secondVC.tabBarItem.image = UIImage(named: "shortsIcon")
         secondVC.tabBarItem.selectedImage = UIImage(named: "shortsIcon")
@@ -45,6 +47,6 @@ class TabBarController: UITabBarController {
         fifthVC.tabBarItem.image = UIImage(named: "LibraryIcon")
         fifthVC.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
         
-        setViewControllers([firstVC, secondVC, thirdVC, fourthVC, fifthVC], animated: true)
+        setViewControllers([homeVC, secondVC, thirdVC, fourthVC, fifthVC], animated: true)
     }
 }
