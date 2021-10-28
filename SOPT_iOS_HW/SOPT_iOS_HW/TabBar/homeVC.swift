@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var rankTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

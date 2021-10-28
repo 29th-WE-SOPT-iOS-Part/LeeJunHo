@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,18 +13,74 @@
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" customClass="HomeVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youtubeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="1p6-JS-d8h">
+                                <rect key="frame" x="16" y="61" width="96" height="20"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shareIcon" translatesAutoresizingMaskIntoConstraints="NO" id="0sM-3F-pZG">
+                                <rect key="frame" x="199" y="56" width="32" height="32"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifierIcon" translatesAutoresizingMaskIntoConstraints="NO" id="DsV-yB-gcB">
+                                <rect key="frame" x="286" y="55" width="32" height="32"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bellIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-lG-04O">
+                                <rect key="frame" x="243" y="55" width="32" height="32"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="99N-Sx-F2e">
+                                <rect key="frame" x="335" y="60" width="24" height="24"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="TSa-qP-g8a">
+                                <rect key="frame" x="0.0" y="247" width="375" height="565"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="HomeTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="jvo-Oq-ddP" customClass="HomeTableViewCell" customModule="SOPT_iOS_HW1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jvo-Oq-ddP" id="Ofd-YN-kRB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DsV-yB-gcB" firstAttribute="leading" secondItem="fLo-lG-04O" secondAttribute="trailing" constant="11" id="4iS-yI-Qfq"/>
+                            <constraint firstItem="1p6-JS-d8h" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="Avp-js-jsh"/>
+                            <constraint firstItem="0sM-3F-pZG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="56" id="Bil-Dt-iAc"/>
+                            <constraint firstItem="TSa-qP-g8a" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="F4k-V6-NsW"/>
+                            <constraint firstAttribute="bottom" secondItem="TSa-qP-g8a" secondAttribute="bottom" id="G0o-a4-cPm"/>
+                            <constraint firstAttribute="trailing" secondItem="99N-Sx-F2e" secondAttribute="trailing" constant="16" id="Js5-my-CL3"/>
+                            <constraint firstItem="fLo-lG-04O" firstAttribute="leading" secondItem="0sM-3F-pZG" secondAttribute="trailing" constant="12" id="K7N-Zw-XaJ"/>
+                            <constraint firstItem="1p6-JS-d8h" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="61" id="Syd-Mw-RkN"/>
+                            <constraint firstItem="0sM-3F-pZG" firstAttribute="leading" secondItem="1p6-JS-d8h" secondAttribute="trailing" constant="87" id="YSY-A3-Pum"/>
+                            <constraint firstAttribute="trailing" secondItem="TSa-qP-g8a" secondAttribute="trailing" id="Yzy-3K-D9D"/>
+                            <constraint firstItem="fLo-lG-04O" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="ckN-w9-9mb"/>
+                            <constraint firstItem="99N-Sx-F2e" firstAttribute="leading" secondItem="DsV-yB-gcB" secondAttribute="trailing" constant="17" id="dlF-Ou-dsA"/>
+                            <constraint firstItem="DsV-yB-gcB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="h4P-jF-BAN"/>
+                            <constraint firstItem="TSa-qP-g8a" firstAttribute="top" secondItem="1p6-JS-d8h" secondAttribute="bottom" constant="166" id="uGO-Hm-hL3"/>
+                            <constraint firstItem="99N-Sx-F2e" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="60" id="uV4-B0-cRK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rankTableView" destination="TSa-qP-g8a" id="i1f-VJ-ncf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="79"/>
+            <point key="canvasLocation" x="10.4" y="78.325123152709367"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bellIcon" width="32" height="32"/>
+        <image name="magnifierIcon" width="32" height="32"/>
+        <image name="profileIcon" width="24" height="24"/>
+        <image name="shareIcon" width="32" height="32"/>
+        <image name="youtubeIcon" width="96" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
