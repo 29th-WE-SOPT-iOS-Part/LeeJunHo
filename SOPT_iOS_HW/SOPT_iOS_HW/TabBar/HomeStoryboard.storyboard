@@ -67,7 +67,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rankTableView" destination="TSa-qP-g8a" id="i1f-VJ-ncf"/>
+                        <outlet property="HomeTableView" destination="TSa-qP-g8a" id="ZVG-TE-nHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

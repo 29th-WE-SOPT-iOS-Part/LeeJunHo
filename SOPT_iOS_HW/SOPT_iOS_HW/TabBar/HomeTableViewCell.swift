@@ -9,6 +9,8 @@ import UIKit
 
 class HomeTableViewCell: UITableViewCell {
 
+    static let identifier = "HomeTableViewCell"
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     
@@ -22,6 +24,11 @@ class HomeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setData(appData: HomeTableViewContentData) {
+        titleLabel.text = appData.title
+        subtitleLabel.text = appData.subtitle
     }
     
 }

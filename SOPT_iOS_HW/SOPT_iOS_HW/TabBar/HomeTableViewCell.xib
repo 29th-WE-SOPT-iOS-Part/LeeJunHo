@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,23 +17,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wesoptiOSPart" translatesAutoresizingMaskIntoConstraints="NO" id="oiq-R5-VOP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="212"/>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-4H-wwU">
-                        <rect key="frame" x="12" y="228" width="36" height="36"/>
+                        <rect key="frame" x="12" y="224" width="36" height="36"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="dMB-4H-wwU" secondAttribute="height" multiplier="1:1" id="f1j-h8-9nt"/>
+                            <constraint firstAttribute="width" constant="36" id="EI8-iC-Ios"/>
+                            <constraint firstAttribute="height" constant="36" id="oxW-10-tPU"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-Ti-VNr">
-                        <rect key="frame" x="60" y="228" width="270" height="35"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-Ti-VNr">
+                        <rect key="frame" x="59.666666666666664" y="225" width="270" height="36"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="35" id="5ez-mE-WID"/>
-                            <constraint firstAttribute="width" constant="270" id="bVD-IL-sbk"/>
+                            <constraint firstAttribute="height" constant="36" id="5ez-mE-WID"/>
+                            <constraint firstAttribute="width" priority="750" constant="270" id="bVD-IL-sbk"/>
                         </constraints>
                         <attributedString key="attributedText">
-                            <fragment content="Label">
+                            <fragment content="Label sdafsdf">
                                 <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <font key="NSFont" size="15" name="SFProDisplay-Regular"/>
                                 </attributes>
                             </fragment>
@@ -41,15 +43,15 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gfe-56-qth">
-                        <rect key="frame" x="349" y="223" width="26" height="26"/>
+                        <rect key="frame" x="349" y="219" width="26" height="26"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="26" id="Dva-qz-FOs"/>
                             <constraint firstAttribute="height" constant="26" id="VtP-v9-ehd"/>
-                            <constraint firstAttribute="width" secondItem="Gfe-56-qth" secondAttribute="height" multiplier="1:1" id="rdm-8C-cud"/>
+                            <constraint firstAttribute="width" secondItem="Gfe-56-qth" secondAttribute="height" multiplier="1:1" priority="750" id="rdm-8C-cud"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcR-8Q-7XQ">
-                        <rect key="frame" x="60" y="263" width="42" height="16"/>
+                        <rect key="frame" x="59.666666666666657" y="264.33333333333331" width="270" height="16"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="16" id="aEM-Cs-trd"/>
                         </constraints>
@@ -69,13 +71,13 @@
                     <constraint firstItem="dMB-4H-wwU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="3i2-VE-Wjf"/>
                     <constraint firstAttribute="trailing" secondItem="Gfe-56-qth" secondAttribute="trailing" id="6gZ-Vd-4Yj"/>
                     <constraint firstItem="OcR-8Q-7XQ" firstAttribute="leading" secondItem="Mkf-Ti-VNr" secondAttribute="leading" id="8E8-y5-ARP"/>
-                    <constraint firstAttribute="bottom" secondItem="OcR-8Q-7XQ" secondAttribute="bottom" constant="26.800000000000001" id="9Dr-89-52R"/>
+                    <constraint firstAttribute="bottom" secondItem="OcR-8Q-7XQ" secondAttribute="bottom" constant="25.800000000000001" id="9Dr-89-52R"/>
                     <constraint firstItem="Mkf-Ti-VNr" firstAttribute="top" secondItem="oiq-R5-VOP" secondAttribute="bottom" constant="12.02" id="9Ef-U9-UtH"/>
                     <constraint firstAttribute="trailing" secondItem="oiq-R5-VOP" secondAttribute="trailing" id="PYL-g7-SX3"/>
                     <constraint firstItem="oiq-R5-VOP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QZL-la-QPt"/>
                     <constraint firstItem="oiq-R5-VOP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gbi-xE-gZs"/>
-                    <constraint firstItem="OcR-8Q-7XQ" firstAttribute="width" secondItem="Mkf-Ti-VNr" secondAttribute="width" multiplier="0.155556" id="iCd-ec-ciT"/>
-                    <constraint firstItem="OcR-8Q-7XQ" firstAttribute="top" secondItem="Mkf-Ti-VNr" secondAttribute="bottom" id="kuw-RD-6Ns"/>
+                    <constraint firstItem="OcR-8Q-7XQ" firstAttribute="width" secondItem="Mkf-Ti-VNr" secondAttribute="width" id="iCd-ec-ciT"/>
+                    <constraint firstItem="OcR-8Q-7XQ" firstAttribute="top" secondItem="Mkf-Ti-VNr" secondAttribute="bottom" constant="4.0800000000000001" id="kuw-RD-6Ns"/>
                     <constraint firstItem="Gfe-56-qth" firstAttribute="leading" secondItem="Mkf-Ti-VNr" secondAttribute="trailing" constant="19.170000000000002" id="mlC-df-oNL"/>
                     <constraint firstItem="Gfe-56-qth" firstAttribute="top" secondItem="oiq-R5-VOP" secondAttribute="bottom" constant="7" id="qsN-AN-mR9"/>
                     <constraint firstItem="dMB-4H-wwU" firstAttribute="top" secondItem="oiq-R5-VOP" secondAttribute="bottom" constant="12" id="rce-bh-4ei"/>
@@ -90,7 +92,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="detailIcon" width="26" height="27.5"/>
+        <image name="detailIcon" width="26" height="27.333333969116211"/>
         <image name="profileIcon" width="24" height="24"/>
         <image name="wesoptiOSPart" width="375" height="212"/>
     </resources>
