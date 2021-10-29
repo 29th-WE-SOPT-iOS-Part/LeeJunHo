@@ -11,19 +11,25 @@ class HomeVC: UIViewController {
 
     @IBOutlet weak var HomeCollectionView: UICollectionView!
     @IBOutlet weak var HomeTableView: UITableView!
+    @IBOutlet weak var HomeCategoryView: UICollectionView!
     
     var HomeTableViewContentList: [HomeTableViewContentData] = []
     var HomeCollectionViewContentList: [HomeCollectionViewContentData] = []
-
+    var HomeCategoryViewContentList: [HomeCategoryViewContentData] = []
+    var width: [CGFloat] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initHomeTableViewContentList()
         initHomeCollectionViewContentList()
+        initHomeCategoryViewContentList()
         registerXib()
         HomeCollectionView.dataSource = self
         HomeCollectionView.delegate = self
         HomeTableView.dataSource = self
         HomeTableView.delegate = self
+        HomeCategoryView.dataSource = self
+        HomeCategoryView.delegate = self
     }
     
     func registerXib(){
@@ -32,6 +38,9 @@ class HomeVC: UIViewController {
         
         let xibCollectionViewName = UINib(nibName: HomeVCCollectionViewCell.identifier, bundle: nil)
         HomeCollectionView.register(xibCollectionViewName, forCellWithReuseIdentifier: HomeVCCollectionViewCell.identifier)
+        
+        let xibCategoryViewName = UINib(nibName: HomeCategoryViewCell.identifier, bundle: nil)
+        HomeCategoryView.register(xibCategoryViewName, forCellWithReuseIdentifier: HomeCategoryViewCell.identifier)
     }
     
     func initHomeTableViewContentList() {
@@ -54,7 +63,29 @@ class HomeVC: UIViewController {
             HomeCollectionViewContentData(subscLabel: "PlanPart", imageName: "ggamju6")
         ])
     }
+    
+    func initHomeCategoryViewContentList() {
+        let texts: [String] = ["전체", "오늘", "이어서 시청하기", "시청하지 않음", "실시간", "게시물"]
+        
+        let testLabel = UILabel(frame: .zero)
+        testLabel.font = UIFont(name: "SF Pro display Regular", size:14)
+        
+        for txt in texts {
+            print(width)
+            width.append(("\(txt)" as! NSString).size(withAttributes: [NSAttributedString.Key.font : testLabel.font]).width)
+        }
+        
+        HomeCategoryViewContentList.append(contentsOf: [
+            HomeCategoryViewContentData(categoryText: "전체"),
+            HomeCategoryViewContentData(categoryText: "오늘"),
+            HomeCategoryViewContentData(categoryText: "이어서 시청하기"),
+            HomeCategoryViewContentData(categoryText: "시청하지 않음"),
+            HomeCategoryViewContentData(categoryText: "실시간"),
+            HomeCategoryViewContentData(categoryText: "게시물"),
+        ])
+    }
 }
+
 
 extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -78,21 +109,43 @@ extension HomeVC: UITableViewDataSource{
 
 extension HomeVC: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return HomeCollectionViewContentList.count
+        if collectionView == HomeCollectionView{
+            return HomeCollectionViewContentList.count
+        }
+        else {
+            return HomeCategoryViewContentList.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeVCCollectionViewCell.identifier, for: indexPath) as? HomeVCCollectionViewCell else {return UICollectionViewCell()}
-        
-        cell.setCollectionData(appData: HomeCollectionViewContentList[indexPath.row])
+        if collectionView == HomeCollectionView{
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeVCCollectionViewCell.identifier, for: indexPath) as? HomeVCCollectionViewCell else {return UICollectionViewCell()}
+            
+            cell.setCollectionData(appData: HomeCollectionViewContentList[indexPath.row])
 
-        return cell
+            return cell
+        }
+        else {
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCategoryViewCell.identifier, for: indexPath) as? HomeCategoryViewCell else {return UICollectionViewCell()}
+            
+            cell.setData(appData: HomeCategoryViewContentList[indexPath.row])
+            cell.setUIConfiguration()
+            cell.categoryLabel.frame.size.width = width[indexPath.row]+8
+            
+            return cell
+        }
+
     }
 }
 
 extension HomeVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 72, height:104)
+        if collectionView == HomeCollectionView{
+            return CGSize(width: 72, height:104)
+        }
+        else {
+            return CGSize(width: width[indexPath.row]+20, height:49)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

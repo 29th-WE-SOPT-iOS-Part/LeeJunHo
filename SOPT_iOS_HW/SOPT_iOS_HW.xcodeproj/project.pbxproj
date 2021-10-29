@@ -23,6 +23,9 @@
 		EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD2A272B81EE00981D5D /* HomeVCCollectionViewCell.swift */; };
 		EB70AD2D272B81EF00981D5D /* HomeVCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */; };
 		EB70AD2F272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */; };
+		EB70AD32272BC29400981D5D /* HomeCategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */; };
+		EB70AD33272BC29400981D5D /* HomeCategoryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */; };
+		EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */; };
 		EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDB270DE14B008677B4 /* AppDelegate.swift */; };
 		EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */; };
 		EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB92ADE1270DE14B008677B4 /* Main.storyboard */; };
@@ -50,6 +53,9 @@
 		EB70AD2A272B81EE00981D5D /* HomeVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCCollectionViewCell.swift; sourceTree = "<group>"; };
 		EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVCCollectionViewCell.xib; sourceTree = "<group>"; };
 		EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewContentDataModel.swift; sourceTree = "<group>"; };
+		EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewCell.swift; sourceTree = "<group>"; };
+		EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryViewCell.xib; sourceTree = "<group>"; };
+		EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewDataModel.swift; sourceTree = "<group>"; };
 		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 				EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */,
 				EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */,
 				EB70ACC22718987900981D5D /* HomeVC.swift */,
+				EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */,
+				EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */,
+				EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */,
 				EB70AD24272A8E3600981D5D /* HomeTableViewCell.swift */,
 				EB70AD25272A8E3600981D5D /* HomeTableViewCell.xib */,
 				EB70AD28272A980800981D5D /* HomeTableViewDataModel.swift */,
@@ -217,6 +226,7 @@
 				EB70AD23272A7A0600981D5D /* HomeStoryboard.storyboard in Resources */,
 				EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */,
 				EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */,
+				EB70AD33272BC29400981D5D /* HomeCategoryViewCell.xib in Resources */,
 				EB70AD2D272B81EF00981D5D /* HomeVCCollectionViewCell.xib in Resources */,
 				EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */,
 			);
@@ -234,6 +244,8 @@
 				EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */,
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
 				EB70ACC32718987900981D5D /* HomeVC.swift in Sources */,
+				EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */,
+				EB70AD32272BC29400981D5D /* HomeCategoryViewCell.swift in Sources */,
 				EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */,
 				EB70ACC52718988700981D5D /* SecondVC.swift in Sources */,
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,

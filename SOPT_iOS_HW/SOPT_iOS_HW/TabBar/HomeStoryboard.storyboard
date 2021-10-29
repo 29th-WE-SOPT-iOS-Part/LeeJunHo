@@ -79,11 +79,32 @@
                                     <constraint firstAttribute="height" constant="1" id="zWX-Er-3bu"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EII-U2-NYe">
+                                <rect key="frame" x="0.0" y="198" width="375" height="49"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RhC-IH-s60">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lju-lD-piw">
+                                        <rect key="frame" x="0.0" y="-39.666666666666664" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Cci-jV-eqR">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DsV-yB-gcB" firstAttribute="leading" secondItem="fLo-lG-04O" secondAttribute="trailing" constant="11" id="4iS-yI-Qfq"/>
+                            <constraint firstItem="EII-U2-NYe" firstAttribute="top" secondItem="7nW-Wv-Qoa" secondAttribute="bottom" id="6Ab-St-xaG"/>
                             <constraint firstItem="1p6-JS-d8h" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="Avp-js-jsh"/>
                             <constraint firstItem="0sM-3F-pZG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="56" id="Bil-Dt-iAc"/>
                             <constraint firstAttribute="trailing" secondItem="7nW-Wv-Qoa" secondAttribute="trailing" id="DY7-p0-XqI"/>
@@ -91,13 +112,16 @@
                             <constraint firstAttribute="bottom" secondItem="TSa-qP-g8a" secondAttribute="bottom" id="G0o-a4-cPm"/>
                             <constraint firstAttribute="trailing" secondItem="99N-Sx-F2e" secondAttribute="trailing" constant="16" id="Js5-my-CL3"/>
                             <constraint firstItem="fLo-lG-04O" firstAttribute="leading" secondItem="0sM-3F-pZG" secondAttribute="trailing" constant="12" id="K7N-Zw-XaJ"/>
+                            <constraint firstItem="EII-U2-NYe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Odn-ek-BCB"/>
                             <constraint firstItem="1p6-JS-d8h" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="61" id="Syd-Mw-RkN"/>
                             <constraint firstAttribute="trailing" secondItem="TSa-qP-g8a" secondAttribute="trailing" id="Yzy-3K-D9D"/>
                             <constraint firstAttribute="trailing" secondItem="lK4-m7-BL4" secondAttribute="trailing" id="aEb-ia-fcD"/>
                             <constraint firstItem="fLo-lG-04O" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="ckN-w9-9mb"/>
                             <constraint firstItem="99N-Sx-F2e" firstAttribute="leading" secondItem="DsV-yB-gcB" secondAttribute="trailing" constant="17" id="dlF-Ou-dsA"/>
+                            <constraint firstAttribute="trailing" secondItem="EII-U2-NYe" secondAttribute="trailing" id="e45-Ze-58p"/>
                             <constraint firstItem="7nW-Wv-Qoa" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="h16-J0-eiP"/>
                             <constraint firstItem="DsV-yB-gcB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="55" id="h4P-jF-BAN"/>
+                            <constraint firstItem="TSa-qP-g8a" firstAttribute="top" secondItem="EII-U2-NYe" secondAttribute="bottom" id="kS8-E5-xT4"/>
                             <constraint firstItem="TSa-qP-g8a" firstAttribute="top" secondItem="lK4-m7-BL4" secondAttribute="bottom" constant="48" id="lv5-fp-JQ3"/>
                             <constraint firstItem="lK4-m7-BL4" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="sQ1-ar-mf8"/>
                             <constraint firstItem="TSa-qP-g8a" firstAttribute="top" secondItem="1p6-JS-d8h" secondAttribute="bottom" constant="166" id="uGO-Hm-hL3"/>
@@ -106,6 +130,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="HomeCategoryView" destination="EII-U2-NYe" id="r7Y-ud-5S4"/>
                         <outlet property="HomeCollectionView" destination="7nW-Wv-Qoa" id="Gub-fO-1cd"/>
                         <outlet property="HomeTableView" destination="TSa-qP-g8a" id="ZVG-TE-nHE"/>
                     </connections>
