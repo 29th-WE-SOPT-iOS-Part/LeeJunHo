@@ -20,6 +20,9 @@
 		EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD24272A8E3600981D5D /* HomeTableViewCell.swift */; };
 		EB70AD27272A8E3600981D5D /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB70AD25272A8E3600981D5D /* HomeTableViewCell.xib */; };
 		EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD28272A980800981D5D /* HomeTableViewDataModel.swift */; };
+		EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD2A272B81EE00981D5D /* HomeVCCollectionViewCell.swift */; };
+		EB70AD2D272B81EF00981D5D /* HomeVCCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */; };
+		EB70AD2F272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */; };
 		EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDB270DE14B008677B4 /* AppDelegate.swift */; };
 		EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */; };
 		EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB92ADE1270DE14B008677B4 /* Main.storyboard */; };
@@ -44,6 +47,9 @@
 		EB70AD24272A8E3600981D5D /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		EB70AD25272A8E3600981D5D /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		EB70AD28272A980800981D5D /* HomeTableViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewDataModel.swift; sourceTree = "<group>"; };
+		EB70AD2A272B81EE00981D5D /* HomeVCCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVCCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVCCollectionViewCell.xib; sourceTree = "<group>"; };
+		EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewContentDataModel.swift; sourceTree = "<group>"; };
 		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 				EB70ACC8271898A000981D5D /* FourthVC.swift */,
 				EB70ACCA271898AC00981D5D /* FifthVC.swift */,
 				EB70AD22272A7A0600981D5D /* HomeStoryboard.storyboard */,
+				EB70AD2A272B81EE00981D5D /* HomeVCCollectionViewCell.swift */,
+				EB70AD2B272B81EF00981D5D /* HomeVCCollectionViewCell.xib */,
+				EB70AD2E272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift */,
 				EB70ACC22718987900981D5D /* HomeVC.swift */,
 				EB70AD24272A8E3600981D5D /* HomeTableViewCell.swift */,
 				EB70AD25272A8E3600981D5D /* HomeTableViewCell.xib */,
@@ -208,6 +217,7 @@
 				EB70AD23272A7A0600981D5D /* HomeStoryboard.storyboard in Resources */,
 				EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */,
 				EB92ADE3270DE14B008677B4 /* Main.storyboard in Resources */,
+				EB70AD2D272B81EF00981D5D /* HomeVCCollectionViewCell.xib in Resources */,
 				EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +239,8 @@
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,
 				EB70ACC72718989300981D5D /* ThirdVC.swift in Sources */,
 				EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */,
+				EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */,
+				EB70AD2F272B8C2300981D5D /* HomeCollectionViewContentDataModel.swift in Sources */,
 				EB70ACC9271898A000981D5D /* FourthVC.swift in Sources */,
 				EB92ADF2270E1343008677B4 /* WelcomeVC.swift in Sources */,
 				EB70ACCB271898AC00981D5D /* FifthVC.swift in Sources */,
