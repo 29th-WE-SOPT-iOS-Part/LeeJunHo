@@ -22,6 +22,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkToEnableBtn()
+
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

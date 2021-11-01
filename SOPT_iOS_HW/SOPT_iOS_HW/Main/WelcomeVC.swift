@@ -39,7 +39,8 @@ class WelcomeVC: UIViewController {
         let secondStoryboard = UIStoryboard.init(name: "TabBarStoryboard", bundle:nil)
 
         guard let nextVC = secondStoryboard.instantiateViewController(identifier: "TabBarController") as? TabBarController else {return}
-        
+
+        nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated:true, completion:nil)
     }
 
