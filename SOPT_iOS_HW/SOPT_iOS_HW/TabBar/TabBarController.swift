@@ -23,30 +23,22 @@ class TabBarController: UITabBarController {
 
         let homeVC = HomeSB.instantiateViewController(identifier: "HomeVC")
         
-        guard let secondVC = self.storyboard?.instantiateViewController(identifier:"SecondVC"),
-              let thirdVC = self.storyboard?.instantiateViewController(identifier:"ThirdVC"),
-              let fourthVC = self.storyboard?.instantiateViewController(identifier:"FourthVC"),
-              let fifthVC = self.storyboard?.instantiateViewController(identifier:"FifthVC") else {return}
+        guard let shortsVC = self.storyboard?.instantiateViewController(identifier:"ShortsVC"),
+              let addVC = self.storyboard?.instantiateViewController(identifier:"AddVC"),
+              let subscVC = self.storyboard?.instantiateViewController(identifier:"SubscVC"),
+              let libraryVC = self.storyboard?.instantiateViewController(identifier:"LibraryVC") else {return}
         
-        UITabBar.appearance().tintColor = UIColor.black
+        tabBar.backgroundColor = .white
+        tabBar.isTranslucent = false
       
         //MARK: - tabBarItem data
         
-        homeVC.tabBarItem.title = "홈"
-        homeVC.tabBarItem.image = UIImage(named: "homeIcon")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "homeIconFill")
-        secondVC.tabBarItem.title = "shorts"
-        secondVC.tabBarItem.image = UIImage(named: "shortsIcon")
-        secondVC.tabBarItem.selectedImage = UIImage(named: "shortsIcon")
-        thirdVC.tabBarItem.title = "추가"
-        thirdVC.tabBarItem.image = UIImage(named: "plueCircleIcon")
-        fourthVC.tabBarItem.title = "구독"
-        fourthVC.tabBarItem.image = UIImage(named: "subscriptionsIcon")
-        fourthVC.tabBarItem.selectedImage = UIImage(named: "subscriptionsIconFill")
-        fifthVC.tabBarItem.title = "보관함"
-        fifthVC.tabBarItem.image = UIImage(named: "LibraryIcon")
-        fifthVC.tabBarItem.selectedImage = UIImage(named: "LibraryIconFill")
+        homeVC.tabBarItem = UITabBarItem(title : "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
+        shortsVC.tabBarItem = UITabBarItem(title : "shorts", image: UIImage(named: "shortsIcon"), selectedImage: UIImage(named: "shortsIcon"))
+        addVC.tabBarItem = UITabBarItem(title : "추가", image: UIImage(named: "plueCircleIcon"), selectedImage: UIImage(named: "plueCircleIcon"))
+        subscVC.tabBarItem = UITabBarItem(title : "구독", image: UIImage(named: "subscriptionsIcon"), selectedImage: UIImage(named: "subscriptionsIconFill"))
+        libraryVC.tabBarItem = UITabBarItem(title : "보관함", image: UIImage(named: "LibraryIcon"), selectedImage: UIImage(named: "LibraryIconIconFill"))
         
-        setViewControllers([homeVC, secondVC, thirdVC, fourthVC, fifthVC], animated: true)
+        setViewControllers([homeVC, shortsVC, addVC, subscVC, libraryVC], animated: true)
     }
 }

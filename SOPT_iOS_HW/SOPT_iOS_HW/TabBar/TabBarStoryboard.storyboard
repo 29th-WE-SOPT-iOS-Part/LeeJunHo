@@ -11,7 +11,7 @@
         <!--Item 2-->
         <scene sceneID="upm-8t-aSm">
             <objects>
-                <viewController storyboardIdentifier="SecondVC" id="ufp-Gk-BUH" customClass="SecondVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShortsVC" id="ufp-Gk-BUH" customClass="ShortsVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ucj-Vy-MLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="250" y="-116"/>
         </scene>
-        <!--ThirdVC-->
+        <!--AddVC-->
         <scene sceneID="El9-Lj-qRF">
             <objects>
-                <viewController storyboardIdentifier="ThirdVC" id="F1X-X1-2Ty" customClass="ThirdVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddVC" id="F1X-X1-2Ty" customClass="AddVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rf8-jY-4GQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="232" y="524"/>
         </scene>
-        <!--FourthVC-->
+        <!--SubscVC-->
         <scene sceneID="epM-zl-Wwf">
             <objects>
-                <viewController storyboardIdentifier="FourthVC" id="EPX-wZ-gT0" customClass="FourthVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubscVC" id="EPX-wZ-gT0" customClass="SubscVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xeX-bM-il4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="232" y="1165"/>
         </scene>
-        <!--FifthVC-->
+        <!--LibraryVC-->
         <scene sceneID="rQS-Lw-TQC">
             <objects>
-                <viewController storyboardIdentifier="FifthVC" id="N74-V9-kcX" customClass="FifthVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryVC" id="N74-V9-kcX" customClass="LibraryVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fJv-eE-ZFF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
