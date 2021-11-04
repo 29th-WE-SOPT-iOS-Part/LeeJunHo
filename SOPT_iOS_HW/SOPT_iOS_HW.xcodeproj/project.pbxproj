@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EB6C40D727339592009DE2F2 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */; };
 		EB6C40DB273395BF009DE2F2 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */; };
+		EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */; };
+		EB6C40E1273414C2009DE2F2 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */; };
 		EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */; };
 		EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */; };
 		EB70ACC32718987900981D5D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACC22718987900981D5D /* HomeVC.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
+		EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarStoryboard.storyboard; sourceTree = "<group>"; };
 		EB70ACC22718987900981D5D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */,
 				EB6C40CD27338F6D009DE2F2 /* Storyboards */,
 				EB92ADE4270DE14E008677B4 /* Assets.xcassets */,
+				EB6C40DC2733D84A009DE2F2 /* Extension */,
+				EB6C40DD2733D859009DE2F2 /* Protocol */,
 				EB6C40CE27338F9A009DE2F2 /* APIServices */,
 			);
 			path = Resources;
@@ -130,8 +136,8 @@
 			children = (
 				EB70ACCE271B4E9400981D5D /* NavigationController.swift */,
 				EB92ADEF270E132E008677B4 /* LoginVC.swift */,
-				EB92ADF1270E1343008677B4 /* WelcomeVC.swift */,
 				EB92ADF5270F6757008677B4 /* SignUpVC.swift */,
+				EB92ADF1270E1343008677B4 /* WelcomeVC.swift */,
 				EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */,
 				EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */,
 				EB70ACCC271898C400981D5D /* TabBarController.swift */,
@@ -179,6 +185,22 @@
 				EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EB6C40DC2733D84A009DE2F2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */,
+				EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EB6C40DD2733D859009DE2F2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EB70ACB1271878B900981D5D /* SupportingFiles */ = {
@@ -308,10 +330,12 @@
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
 				EB70ACC32718987900981D5D /* HomeVC.swift in Sources */,
 				EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */,
+				EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */,
 				EB70AD32272BC29400981D5D /* HomeCategoryViewCell.swift in Sources */,
 				EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */,
 				EB70ACC52718988700981D5D /* ShortsVC.swift in Sources */,
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,
+				EB6C40E1273414C2009DE2F2 /* UIView + Extension.swift in Sources */,
 				EB70ACC72718989300981D5D /* AddVC.swift in Sources */,
 				EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */,
 				EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */,

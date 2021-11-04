@@ -9,8 +9,10 @@ import UIKit
 
 class SubscVC: UIViewController {
 
+    @IBOutlet weak var CustomNavigationBar: CustomNavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        CustomNavigationBar.delegate = self
     }
 }

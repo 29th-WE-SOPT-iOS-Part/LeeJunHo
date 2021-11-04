@@ -9,7 +9,10 @@ import UIKit
 
 class LibraryVC: UIViewController {
 
+    @IBOutlet weak var CustomNavigationBar: CustomNavigationBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        CustomNavigationBar.delegate = self
     }
 }

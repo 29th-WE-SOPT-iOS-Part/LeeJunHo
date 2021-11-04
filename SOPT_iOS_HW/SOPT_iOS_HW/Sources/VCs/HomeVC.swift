@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var HomeCollectionView: UICollectionView!
     @IBOutlet weak var HomeTableView: UITableView!
     @IBOutlet weak var HomeCategoryView: UICollectionView!
+    @IBOutlet weak var CustomNavigationBar: CustomNavigationBar!
     
     var HomeTableViewContentList: [HomeTableViewContentData] = []
     var HomeCollectionViewContentList: [HomeCollectionViewContentData] = []
@@ -30,6 +31,7 @@ class HomeVC: UIViewController {
         HomeTableView.delegate = self
         HomeCategoryView.dataSource = self
         HomeCategoryView.delegate = self
+        CustomNavigationBar.delegate = self
     }
     
     func registerXib(){
@@ -160,3 +162,5 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         return 0
     }
 }
+
+
