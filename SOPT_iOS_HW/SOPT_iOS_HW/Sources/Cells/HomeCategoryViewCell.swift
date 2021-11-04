@@ -25,7 +25,6 @@ class HomeCategoryViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override var isSelected: Bool {

@@ -12,13 +12,11 @@ class CustomNavigationBar: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         customInit()
-        //alternativeCustomInit()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         customInit()
-        //alternativeCustomInit()
     }
     
     func customInit() {
