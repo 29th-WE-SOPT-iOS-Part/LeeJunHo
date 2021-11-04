@@ -58,7 +58,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVq-sc-2dn">
-                                <rect key="frame" x="22" y="576" width="68" height="22"/>
+                                <rect key="frame" x="22" y="576" width="64" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="22" id="WPI-lY-eqc"/>
                                 </constraints>
@@ -116,7 +116,6 @@
                             <constraint firstItem="kVq-sc-2dn" firstAttribute="top" secondItem="BBk-Jd-7tc" secondAttribute="bottom" constant="73" id="PK7-54-pOc"/>
                             <constraint firstAttribute="trailing" secondItem="VRp-Th-Tty" secondAttribute="trailing" constant="22" id="TC0-MB-I2i"/>
                             <constraint firstItem="Yfs-am-MKc" firstAttribute="top" secondItem="BBk-Jd-7tc" secondAttribute="bottom" constant="64" id="US0-nd-IJ2"/>
-                            <constraint firstItem="Yfs-am-MKc" firstAttribute="leading" secondItem="kVq-sc-2dn" secondAttribute="trailing" constant="189" id="V8s-Dh-hfP"/>
                             <constraint firstItem="BBk-Jd-7tc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="WpX-r0-2Us"/>
                             <constraint firstItem="VRp-Th-Tty" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="22" id="aii-IF-zEj"/>
                             <constraint firstAttribute="trailing" secondItem="qQr-t5-xUR" secondAttribute="trailing" constant="22" id="eyV-h5-3f8"/>

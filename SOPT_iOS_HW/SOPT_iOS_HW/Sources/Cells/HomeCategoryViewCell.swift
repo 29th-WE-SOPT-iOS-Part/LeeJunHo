@@ -25,9 +25,22 @@ class HomeCategoryViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                //select
+                categoryUIView.backgroundColor = UIColor(red: 0.376, green: 0.376, blue: 0.376, alpha: 1)
+                categoryLabel.textColor = .white
+            } else {
+                //unselect
+                categoryUIView.backgroundColor = UIColor(red: 0.949, green: 0.949, blue: 0.949, alpha: 1)
+                categoryLabel.textColor = .black
+            }
+        }
+    }
+    
     func setData(appData: HomeCategoryViewContentData) {
         categoryLabel.text = appData.categoryText
     }
