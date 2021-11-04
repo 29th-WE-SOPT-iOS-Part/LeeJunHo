@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="ucj-Vy-MLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KV1-WF-Mf4" customClass="CustomNavigationBar" customModule="SOPT_iOS_HW1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8s5-Tm-CIB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lFe-R9-eQq"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="KV1-WF-Mf4" firstAttribute="top" secondItem="ucj-Vy-MLT" secondAttribute="top" constant="50" id="2qV-MB-fYV"/>
+                            <constraint firstAttribute="trailing" secondItem="KV1-WF-Mf4" secondAttribute="trailing" id="Yxl-bU-8DD"/>
+                            <constraint firstItem="KV1-WF-Mf4" firstAttribute="leading" secondItem="lFe-R9-eQq" secondAttribute="leading" id="fdM-jV-uvB"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="JCg-On-kL9"/>
                 </viewController>
@@ -31,8 +45,22 @@
                     <view key="view" contentMode="scaleToFill" id="rf8-jY-4GQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSZ-01-rG6" customClass="CustomNavigationBar" customModule="SOPT_iOS_HW1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XiG-Ba-psr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="X8e-YS-tuY"/>
                         <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gSZ-01-rG6" secondAttribute="trailing" id="0cg-7G-xLJ"/>
+                            <constraint firstItem="gSZ-01-rG6" firstAttribute="top" secondItem="rf8-jY-4GQ" secondAttribute="top" constant="50" id="bIp-ZH-9JC"/>
+                            <constraint firstItem="gSZ-01-rG6" firstAttribute="leading" secondItem="rf8-jY-4GQ" secondAttribute="leading" id="w4k-Su-g0A"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZG-gu-oar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,8 +74,22 @@
                     <view key="view" contentMode="scaleToFill" id="xeX-bM-il4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="265-S6-FCb" customClass="CustomNavigationBar" customModule="SOPT_iOS_HW1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SYy-T5-J20"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zLG-1e-BeD"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstItem="265-S6-FCb" firstAttribute="top" secondItem="xeX-bM-il4" secondAttribute="top" constant="50" id="5q7-wF-Dbg"/>
+                            <constraint firstAttribute="trailing" secondItem="265-S6-FCb" secondAttribute="trailing" id="eWf-Bw-3ao"/>
+                            <constraint firstItem="265-S6-FCb" firstAttribute="leading" secondItem="xeX-bM-il4" secondAttribute="leading" id="lHt-jz-eDQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SM-0Q-qIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -61,8 +103,22 @@
                     <view key="view" contentMode="scaleToFill" id="fJv-eE-ZFF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sal-00-NIA" customClass="CustomNavigationBar" customModule="SOPT_iOS_HW1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="l7Q-hU-UZk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YYh-7K-mn5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sal-00-NIA" firstAttribute="leading" secondItem="fJv-eE-ZFF" secondAttribute="leading" id="Qyz-vv-mJw"/>
+                            <constraint firstItem="sal-00-NIA" firstAttribute="top" secondItem="fJv-eE-ZFF" secondAttribute="top" constant="50" id="gOy-Bg-Wvm"/>
+                            <constraint firstAttribute="trailing" secondItem="sal-00-NIA" secondAttribute="trailing" id="pL8-gZ-QM4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRO-gb-mNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
