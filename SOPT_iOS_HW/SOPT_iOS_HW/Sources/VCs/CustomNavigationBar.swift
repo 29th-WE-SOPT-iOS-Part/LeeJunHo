@@ -13,11 +13,9 @@ class CustomNavigationBar: UIView {
     
     public var delegate: CustomViewDelegate?
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         customInit()
-        
         imageViewToButton()
     }
     
@@ -43,7 +41,6 @@ class CustomNavigationBar: UIView {
     @objc func customObjc(){
         self.delegate?.touchUpToGoLogin()
     }
-    
 }
 
 protocol CustomViewDelegate {

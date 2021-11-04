@@ -39,6 +39,10 @@
 		EB92ADF0270E132E008677B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADEF270E132E008677B4 /* LoginVC.swift */; };
 		EB92ADF2270E1343008677B4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADF1270E1343008677B4 /* WelcomeVC.swift */; };
 		EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADF5270F6757008677B4 /* SignUpVC.swift */; };
+		EBAFF91427344E340091CC7A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91327344E340091CC7A /* APIConstants.swift */; };
+		EBAFF91627344E470091CC7A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91527344E470091CC7A /* NetworkResult.swift */; };
+		EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91727344E610091CC7A /* LoginResponseData.swift */; };
+		EBAFF91A27344E6F0091CC7A /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91927344E6F0091CC7A /* UserSignService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +72,7 @@
 		EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewCell.swift; sourceTree = "<group>"; };
 		EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryViewCell.xib; sourceTree = "<group>"; };
 		EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewDataModel.swift; sourceTree = "<group>"; };
-		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92ADD8270DE14B008677B4 /* Documents */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Documents; path = ../../../../../../../../Documents; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB92ADE2270DE14B008677B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,10 @@
 		EB92ADEF270E132E008677B4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EB92ADF1270E1343008677B4 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		EB92ADF5270F6757008677B4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EBAFF91327344E340091CC7A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EBAFF91527344E470091CC7A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		EBAFF91727344E610091CC7A /* LoginResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseData.swift; sourceTree = "<group>"; };
+		EBAFF91927344E6F0091CC7A /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,6 @@
 				9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */,
 				D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,6 +157,10 @@
 		EB6C40CE27338F9A009DE2F2 /* APIServices */ = {
 			isa = PBXGroup;
 			children = (
+				EBAFF91327344E340091CC7A /* APIConstants.swift */,
+				EBAFF91527344E470091CC7A /* NetworkResult.swift */,
+				EBAFF91727344E610091CC7A /* LoginResponseData.swift */,
+				EBAFF91927344E6F0091CC7A /* UserSignService.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -255,7 +266,7 @@
 		EB92ADD9270DE14B008677B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */,
+				EB92ADD8270DE14B008677B4 /* Documents */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -290,7 +301,7 @@
 			);
 			name = SOPT_iOS_HW1;
 			productName = SOPT_iOS_HW1;
-			productReference = EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */;
+			productReference = EB92ADD8270DE14B008677B4 /* Documents */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -397,14 +408,18 @@
 				EB70ACCF271B4E9400981D5D /* NavigationController.swift in Sources */,
 				EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */,
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
+				EBAFF91A27344E6F0091CC7A /* UserSignService.swift in Sources */,
+				EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */,
 				EB70ACC32718987900981D5D /* HomeVC.swift in Sources */,
 				EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */,
 				EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */,
 				EB70AD32272BC29400981D5D /* HomeCategoryViewCell.swift in Sources */,
+				EBAFF91627344E470091CC7A /* NetworkResult.swift in Sources */,
 				EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */,
 				EB70ACC52718988700981D5D /* ShortsVC.swift in Sources */,
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,
 				EB6C40E1273414C2009DE2F2 /* UIView + Extension.swift in Sources */,
+				EBAFF91427344E340091CC7A /* APIConstants.swift in Sources */,
 				EB70ACC72718989300981D5D /* AddVC.swift in Sources */,
 				EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */,
 				EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */,
