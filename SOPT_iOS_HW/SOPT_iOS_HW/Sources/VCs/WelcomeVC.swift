@@ -29,10 +29,9 @@ class WelcomeVC: UIViewController {
     //MARK: - Custom Methods
     
     func setMessageInLabel(){
-        if let msg = message{
-            dataLabel.text = "\(msg)님\n환영합니다!"
-            dataLabel.sizeToFit()
-        }
+        let msg = UserDefaults.standard.string(forKey: "nameText")
+        dataLabel.text = "\(String(describing: msg!))님\n환영합니다!"
+        dataLabel.sizeToFit()
     }
     
     @IBAction func goToTabBarSB(_ sender: Any) {

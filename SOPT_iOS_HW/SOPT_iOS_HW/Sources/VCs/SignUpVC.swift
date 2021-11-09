@@ -104,7 +104,8 @@ class SignUpVC: UIViewController {
         guard let viewControllers = self.navigationController?.viewControllers else {return}
         nextVC.viewcontrollers = viewControllers
 
-        nextVC.message = nameField.text
+        UserDefaults.standard.set(nameField.text, forKey: "nameText")
+        
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)
     }

@@ -56,8 +56,8 @@ class LoginVC: UIViewController {
     func YesClick() {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
+        UserDefaults.standard.set(nameField.text, forKey: "nameText")
         
-        nextVC.message = nameField.text
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)
     }
