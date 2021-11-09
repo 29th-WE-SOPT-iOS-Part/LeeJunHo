@@ -56,6 +56,7 @@ class LoginVC: UIViewController {
     func YesClick() {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
         
+        
         nextVC.message = nameField.text
         nextVC.modalPresentationStyle = .fullScreen
         self.present(nextVC, animated:true, completion: nil)
@@ -87,7 +88,7 @@ class LoginVC: UIViewController {
     
     func failAlert(title: String, message: String) {
         let alert = UIAlertController(title: title,
-                                      message: message,
+                                       message: message,
                                       preferredStyle: .alert)
         let okAction = UIAlertAction(title: "확인" ,style: .default)
         

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C118160EF5C5BA63E695A34 /* Pods_SOPT_iOS_HW1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */; };
+		EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB606A80273A641900A3C22C /* SignUpResponseData.swift */; };
 		EB6C40D727339592009DE2F2 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */; };
 		EB6C40DB273395BF009DE2F2 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */; };
 		EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */; };
@@ -49,6 +50,7 @@
 		9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_iOS_HW1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.release.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.release.xcconfig"; sourceTree = "<group>"; };
+		EB606A80273A641900A3C22C /* SignUpResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseData.swift; sourceTree = "<group>"; };
 		EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
 		EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewCell.swift; sourceTree = "<group>"; };
 		EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryViewCell.xib; sourceTree = "<group>"; };
 		EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewDataModel.swift; sourceTree = "<group>"; };
-		EB92ADD8270DE14B008677B4 /* Documents */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Documents; path = ../../../../../../../../Documents; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92ADD8270DE14B008677B4 /* Documents */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Documents; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB92ADE2270DE14B008677B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				EBAFF91327344E340091CC7A /* APIConstants.swift */,
 				EBAFF91527344E470091CC7A /* NetworkResult.swift */,
 				EBAFF91727344E610091CC7A /* LoginResponseData.swift */,
+				EB606A80273A641900A3C22C /* SignUpResponseData.swift */,
 				EBAFF91927344E6F0091CC7A /* UserSignService.swift */,
 			);
 			path = APIServices;
@@ -406,6 +409,7 @@
 			files = (
 				EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */,
 				EB70ACCF271B4E9400981D5D /* NavigationController.swift in Sources */,
+				EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */,
 				EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */,
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
 				EBAFF91A27344E6F0091CC7A /* UserSignService.swift in Sources */,
