@@ -75,40 +75,6 @@ class SignUpVC: UIViewController {
             $0.text = ""
         }
     }
-    
-    func successAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title,
-                                      message: message,
-                                      preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인" ,style: .default, handler: { (action) -> Void in
-            self.YesClick()
-            })
-        
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
-    
-    func failAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title,
-                                       message: message,
-                                      preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인" ,style: .default)
-        
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
-    
-    func YesClick() {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-
-        guard let viewControllers = self.navigationController?.viewControllers else {return}
-        nextVC.viewcontrollers = viewControllers
-
-        UserDefaults.standard.set(nameField.text, forKey: "nameText")
-        
-        nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated:true, completion: nil)
-    }
 }
 
 extension SignUpVC {
@@ -117,13 +83,20 @@ extension SignUpVC {
             switch responseData {
             case .success(let signUpResponse):
                 guard let response = signUpResponse as? SignUpResponseData else { return }
-                self.successAlert(title: "회원가입", message: response.message)
+                UserDefaults.standard.set(self.nameField.text, forKey: "nameText")
+                self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                    guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+                    
+                    welcomeVC.modalPresentationStyle = .fullScreen
+                    self.present(welcomeVC, animated: true, completion: nil)
+                })
             case .requestErr(let signUpResponse):
                 guard let response = signUpResponse as? SignUpResponseData else { return }
-                self.failAlert(title: "회원가입", message: response.message)
-            case .pathErr(let signUpResponse):
-                guard let response = signUpResponse as? SignUpResponseData else { return }
-                self.failAlert(title: "회원가입", message: response.message)
+                self.makeAlert(title: "회원가입", message: response.message, okAction: { _ in
+                                    self.setTextFieldEmpty()
+                })
+            case .pathErr:
+                print("pathErr")
             case .serverErr:
                 print("serverErr")
             case .networkFail:

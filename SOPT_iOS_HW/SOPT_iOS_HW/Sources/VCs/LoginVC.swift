@@ -53,14 +53,6 @@ class LoginVC: UIViewController {
         requestLogin()
     }
     
-    func YesClick() {
-        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-        
-        UserDefaults.standard.set(nameField.text, forKey: "nameText")
-        
-        nextVC.modalPresentationStyle = .fullScreen
-        self.present(nextVC, animated:true, completion: nil)
-    }
 
     @IBAction func touchUpToSignUp(_ sender: Any) {
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else {return}
@@ -78,44 +70,58 @@ class LoginVC: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
     }
     
-    func successAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title,
-                                      message: message,
-                                      preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인" ,style: .default, handler: { (action) -> Void in
-            self.YesClick()
-            })
-        
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
+    //MARK: - Alert를 Extension으로 뺴기 전
     
-    func failAlert(title: String, message: String) {
-        let alert = UIAlertController(title: title,
-                                       message: message,
-                                      preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "확인" ,style: .default)
-        
-        alert.addAction(okAction)
-        present(alert, animated: true)
-    }
+//    func successAlert(title: String, message: String) {
+//        let alert = UIAlertController(title: title,
+//                                      message: message,
+//                                      preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "확인" ,style: .default, handler: { (action) -> Void in
+//            self.YesClick()
+//            })
+//
+//        alert.addAction(okAction)
+//        present(alert, animated: true)
+//    }
+//
+//    func failAlert(title: String, message: String) {
+//        let alert = UIAlertController(title: title,
+//                                       message: message,
+//                                      preferredStyle: .alert)
+//        let okAction = UIAlertAction(title: "확인" ,style: .default)
+//
+//        alert.addAction(okAction)
+//        present(alert, animated: true)
+//    }
+//
+//    func YesClick() {
+//        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+//
+//        UserDefaults.standard.set(nameField.text, forKey: "nameText")
+//
+//        nextVC.modalPresentationStyle = .fullScreen
+//        self.present(nextVC, animated:true, completion: nil)
+//    }
 }
 
 extension LoginVC {
     func requestLogin(){
-        UserSignService.shared.login(email: emailField.text ?? "" , password: passwordField.text ?? "") { responseData in
+        UserLoginService.shared.login(email: emailField.text ?? "" , password: passwordField.text ?? "") { responseData in
             switch responseData {
             case .success(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else { return }
-                    if let userData = response.data {
-                        self.successAlert(title: response.message, message: "\(userData.name)님 환영합니다!")
-                }
+                UserDefaults.standard.set(self.nameField.text, forKey: "nameText")
+                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+                    guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+                    
+                    welcomeVC.modalPresentationStyle = .fullScreen
+                    self.present(welcomeVC, animated: true, completion: nil)
+                })
             case .requestErr(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else { return }
-                self.failAlert(title: "로그인", message: response.message)
-            case .pathErr(let loginResponse):
-                guard let response = loginResponse as? LoginResponseData else { return }
-                self.failAlert(title: "로그인", message: response.message)
+                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in self.setTextFieldEmpty()})
+            case .pathErr:
+                print("pathErr")
             case .serverErr:
                 print("serverErr")
             case .networkFail:

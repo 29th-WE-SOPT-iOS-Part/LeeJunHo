@@ -43,7 +43,7 @@
 		EBAFF91427344E340091CC7A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91327344E340091CC7A /* APIConstants.swift */; };
 		EBAFF91627344E470091CC7A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91527344E470091CC7A /* NetworkResult.swift */; };
 		EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91727344E610091CC7A /* LoginResponseData.swift */; };
-		EBAFF91A27344E6F0091CC7A /* UserSignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91927344E6F0091CC7A /* UserSignService.swift */; };
+		EBAFF91A27344E6F0091CC7A /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91927344E6F0091CC7A /* UserLoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,7 +87,7 @@
 		EBAFF91327344E340091CC7A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EBAFF91527344E470091CC7A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		EBAFF91727344E610091CC7A /* LoginResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseData.swift; sourceTree = "<group>"; };
-		EBAFF91927344E6F0091CC7A /* UserSignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSignService.swift; sourceTree = "<group>"; };
+		EBAFF91927344E6F0091CC7A /* UserLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 				EBAFF91527344E470091CC7A /* NetworkResult.swift */,
 				EBAFF91727344E610091CC7A /* LoginResponseData.swift */,
 				EB606A80273A641900A3C22C /* SignUpResponseData.swift */,
-				EBAFF91927344E6F0091CC7A /* UserSignService.swift */,
+				EBAFF91927344E6F0091CC7A /* UserLoginService.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -412,7 +412,7 @@
 				EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */,
 				EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */,
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
-				EBAFF91A27344E6F0091CC7A /* UserSignService.swift in Sources */,
+				EBAFF91A27344E6F0091CC7A /* UserLoginService.swift in Sources */,
 				EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */,
 				EB70ACC32718987900981D5D /* HomeVC.swift in Sources */,
 				EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */,

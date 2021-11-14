@@ -44,8 +44,8 @@ class WelcomeVC: UIViewController {
     }
 
     @IBAction func goBackToLogin(_ sender: Any) {
-        if viewcontrollers.count == 2 {
-            viewcontrollers[1].navigationController?.popViewController(animated: false)
+        if viewcontrollers.count == 3 {
+            viewcontrollers[2].navigationController?.popViewController(animated: false)
         }
 
         guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
