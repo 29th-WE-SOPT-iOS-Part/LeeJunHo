@@ -33,6 +33,7 @@ class SignUpVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setTextFieldEmpty()
+        print(self.navigationController?.viewControllers.count as Any)
     }
 
     //MARK: - Custom Method
@@ -88,7 +89,7 @@ extension SignUpVC {
                     guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
                     
                     welcomeVC.modalPresentationStyle = .fullScreen
-                    self.present(welcomeVC, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(welcomeVC, animated: true)
                 })
             case .requestErr(let signUpResponse):
                 guard let response = signUpResponse as? SignUpResponseData else { return }

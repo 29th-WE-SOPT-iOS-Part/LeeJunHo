@@ -30,6 +30,7 @@ class LoginVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setTextFieldEmpty()
+        print(self.navigationController?.viewControllers.count as Any)
     }
 
     //MARK: - Custom Methods
@@ -115,7 +116,7 @@ extension LoginVC {
                     guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
                     
                     welcomeVC.modalPresentationStyle = .fullScreen
-                    self.present(welcomeVC, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(welcomeVC, animated: true)
                 })
             case .requestErr(let loginResponse):
                 guard let response = loginResponse as? LoginResponseData else { return }

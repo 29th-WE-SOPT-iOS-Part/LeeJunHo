@@ -140,7 +140,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fU5-o5-OB5">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="dJJ-Be-yOh" customClass="TabBarController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" hidesBottomBarWhenPushed="YES" id="dJJ-Be-yOh" customClass="TabBarController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hvg-EJ-SPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

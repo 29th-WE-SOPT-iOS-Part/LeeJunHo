@@ -24,6 +24,8 @@ class WelcomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setMessageInLabel()
+        print(self.navigationController?.viewControllers.count as Any)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     //MARK: - Custom Methods
@@ -44,14 +46,11 @@ class WelcomeVC: UIViewController {
     }
 
     @IBAction func goBackToLogin(_ sender: Any) {
-        if viewcontrollers.count == 3 {
-            viewcontrollers[2].navigationController?.popViewController(animated: false)
-        }
-
-        guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
-
-        self.dismiss(animated:true) {
-            presentingVC.popToRootViewController(animated: false)
+        guard let viewControllerStack = self.navigationController?.viewControllers else {return}
+        for viewController in viewControllerStack {
+            if let loginV = viewController as? LoginVC {
+                self.navigationController?.popToViewController(loginV, animated: true)
+            }
         }
     }
 }
