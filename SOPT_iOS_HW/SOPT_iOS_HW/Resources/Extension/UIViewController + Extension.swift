@@ -11,9 +11,9 @@ extension UIViewController: CustomViewDelegate {
     func touchUpToGoLogin() {
         let secondStoryboard = UIStoryboard.init(name: "Main", bundle:nil)
 
-        guard let nextVC = secondStoryboard.instantiateViewController(identifier: "NavigationController") as? NavigationController else {return}
+        guard let nextVC = secondStoryboard.instantiateViewController(identifier: "LoginVC") as? LoginVC else {return}
 
         nextVC.modalPresentationStyle = .fullScreen
-        present(nextVC, animated:true, completion:nil)
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }

@@ -23,8 +23,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.isEnabled=true
+        setNavigationController()
         //checkToEnableBtn()
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,15 +63,19 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func touchUpToSignUp(_ sender: Any) {
-        guard let nextVC2 = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else {return}
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as? SignUpVC else {return}
 
-        self.navigationController?.pushViewController(nextVC2, animated: true)
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
     func setTextFieldEmpty() {
         [nameField, emailField, passwordField].forEach {
             $0.text = ""
         }
+    }
+    
+    func setNavigationController() {
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     func successAlert(title: String, message: String) {

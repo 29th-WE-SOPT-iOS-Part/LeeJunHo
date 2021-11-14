@@ -20,8 +20,7 @@ class TabBarController: UITabBarController {
     
     func setTabBar() {
         let HomeSB = UIStoryboard.init(name: "HomeStoryboard", bundle:nil)
-
-        let homeVC = HomeSB.instantiateViewController(identifier: "HomeVC")
+        let homeNVC = HomeSB.instantiateViewController(identifier: "HomeNVC")
         
         guard let shortsVC = self.storyboard?.instantiateViewController(identifier:"ShortsVC"),
               let addVC = self.storyboard?.instantiateViewController(identifier:"AddVC"),
@@ -33,12 +32,12 @@ class TabBarController: UITabBarController {
       
         //MARK: - tabBarItem data
         
-        homeVC.tabBarItem = UITabBarItem(title : "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
+        homeNVC.tabBarItem = UITabBarItem(title : "홈", image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIconFill"))
         shortsVC.tabBarItem = UITabBarItem(title : "shorts", image: UIImage(named: "shortsIcon"), selectedImage: UIImage(named: "shortsIcon"))
         addVC.tabBarItem = UITabBarItem(title : "추가", image: UIImage(named: "plueCircleIcon"), selectedImage: UIImage(named: "plueCircleIcon"))
         subscVC.tabBarItem = UITabBarItem(title : "구독", image: UIImage(named: "subscriptionsIcon"), selectedImage: UIImage(named: "subscriptionsIconFill"))
         libraryVC.tabBarItem = UITabBarItem(title : "보관함", image: UIImage(named: "LibraryIcon"), selectedImage: UIImage(named: "LibraryIconIconFill"))
         
-        setViewControllers([homeVC, shortsVC, addVC, subscVC, libraryVC], animated: true)
+        setViewControllers([homeNVC, shortsVC, addVC, subscVC, libraryVC], animated: true)
     }
 }

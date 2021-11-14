@@ -34,6 +34,11 @@ class HomeVC: UIViewController {
         CustomNavigationBar.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationController()
+    }
+    
     func registerXib(){
         let xibTableViewName = UINib(nibName: HomeTableViewCell.identifier, bundle: nil)
         HomeTableView.register(xibTableViewName, forCellReuseIdentifier: HomeTableViewCell.identifier)
@@ -53,6 +58,10 @@ class HomeVC: UIViewController {
             HomeTableViewContentData(title: "4차 iOS 세미나: CoCoapods & Networking, REST API",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전"),
             HomeTableViewContentData(title: "7차 iOS 세미나 : Animation과 제스쳐, 데이터 전달 심화",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전")
         ])
+    }
+    
+    func setNavigationController() {
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     func initHomeCollectionViewContentList() {
