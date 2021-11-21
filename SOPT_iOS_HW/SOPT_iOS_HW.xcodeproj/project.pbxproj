@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C118160EF5C5BA63E695A34 /* Pods_SOPT_iOS_HW1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */; };
+		EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB606A80273A641900A3C22C /* SignUpResponseData.swift */; };
 		EB6C40D727339592009DE2F2 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */; };
 		EB6C40DB273395BF009DE2F2 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */; };
+		EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */; };
+		EB6C40E1273414C2009DE2F2 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */; };
 		EB70ACB02718781C00981D5D /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */; };
 		EB70ACB727188DEC00981D5D /* TabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */; };
 		EB70ACC32718987900981D5D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB70ACC22718987900981D5D /* HomeVC.swift */; };
@@ -36,11 +40,21 @@
 		EB92ADF0270E132E008677B4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADEF270E132E008677B4 /* LoginVC.swift */; };
 		EB92ADF2270E1343008677B4 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADF1270E1343008677B4 /* WelcomeVC.swift */; };
 		EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB92ADF5270F6757008677B4 /* SignUpVC.swift */; };
+		EBAFF91427344E340091CC7A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91327344E340091CC7A /* APIConstants.swift */; };
+		EBAFF91627344E470091CC7A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91527344E470091CC7A /* NetworkResult.swift */; };
+		EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91727344E610091CC7A /* LoginResponseData.swift */; };
+		EBAFF91A27344E6F0091CC7A /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAFF91927344E6F0091CC7A /* UserLoginService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_iOS_HW1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.release.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.release.xcconfig"; sourceTree = "<group>"; };
+		EB606A80273A641900A3C22C /* SignUpResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseData.swift; sourceTree = "<group>"; };
 		EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
+		EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		EB70ACAF2718781C00981D5D /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
 		EB70ACB627188DEC00981D5D /* TabBarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarStoryboard.storyboard; sourceTree = "<group>"; };
 		EB70ACC22718987900981D5D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -60,7 +74,7 @@
 		EB70AD30272BC29300981D5D /* HomeCategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewCell.swift; sourceTree = "<group>"; };
 		EB70AD31272BC29300981D5D /* HomeCategoryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCategoryViewCell.xib; sourceTree = "<group>"; };
 		EB70AD34272BC37200981D5D /* HomeCategoryViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryViewDataModel.swift; sourceTree = "<group>"; };
-		EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB92ADD8270DE14B008677B4 /* Documents */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Documents; path = SOPT_iOS_HW1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB92ADDB270DE14B008677B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EB92ADE2270DE14B008677B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +84,10 @@
 		EB92ADEF270E132E008677B4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		EB92ADF1270E1343008677B4 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		EB92ADF5270F6757008677B4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		EBAFF91327344E340091CC7A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EBAFF91527344E470091CC7A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		EBAFF91727344E610091CC7A /* LoginResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseData.swift; sourceTree = "<group>"; };
+		EBAFF91927344E6F0091CC7A /* UserLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +95,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C118160EF5C5BA63E695A34 /* Pods_SOPT_iOS_HW1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CF03BD045A617916BA649E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */,
+				D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2C3584FDE16361935CABFD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB6C40CB27338EEE009DE2F2 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +139,8 @@
 				EB92ADDD270DE14B008677B4 /* SceneDelegate.swift */,
 				EB6C40CD27338F6D009DE2F2 /* Storyboards */,
 				EB92ADE4270DE14E008677B4 /* Assets.xcassets */,
+				EB6C40DC2733D84A009DE2F2 /* Extension */,
+				EB6C40DD2733D859009DE2F2 /* Protocol */,
 				EB6C40CE27338F9A009DE2F2 /* APIServices */,
 			);
 			path = Resources;
@@ -121,6 +159,11 @@
 		EB6C40CE27338F9A009DE2F2 /* APIServices */ = {
 			isa = PBXGroup;
 			children = (
+				EBAFF91327344E340091CC7A /* APIConstants.swift */,
+				EBAFF91527344E470091CC7A /* NetworkResult.swift */,
+				EBAFF91727344E610091CC7A /* LoginResponseData.swift */,
+				EB606A80273A641900A3C22C /* SignUpResponseData.swift */,
+				EBAFF91927344E6F0091CC7A /* UserLoginService.swift */,
 			);
 			path = APIServices;
 			sourceTree = "<group>";
@@ -130,8 +173,8 @@
 			children = (
 				EB70ACCE271B4E9400981D5D /* NavigationController.swift */,
 				EB92ADEF270E132E008677B4 /* LoginVC.swift */,
-				EB92ADF1270E1343008677B4 /* WelcomeVC.swift */,
 				EB92ADF5270F6757008677B4 /* SignUpVC.swift */,
+				EB92ADF1270E1343008677B4 /* WelcomeVC.swift */,
 				EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */,
 				EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */,
 				EB70ACCC271898C400981D5D /* TabBarController.swift */,
@@ -181,6 +224,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EB6C40DC2733D84A009DE2F2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EB6C40DE2733D956009DE2F2 /* UIViewController + Extension.swift */,
+				EB6C40E0273414C2009DE2F2 /* UIView + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EB6C40DD2733D859009DE2F2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		EB70ACB1271878B900981D5D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,13 +261,15 @@
 			children = (
 				EB92ADDA270DE14B008677B4 /* SOPT_iOS_HW */,
 				EB92ADD9270DE14B008677B4 /* Products */,
+				7CF03BD045A617916BA649E1 /* Pods */,
+				C2C3584FDE16361935CABFD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		EB92ADD9270DE14B008677B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */,
+				EB92ADD8270DE14B008677B4 /* Documents */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -231,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB92ADEC270DE14E008677B4 /* Build configuration list for PBXNativeTarget "SOPT_iOS_HW1" */;
 			buildPhases = (
+				5A409064CDFC9A85E88EF67D /* [CP] Check Pods Manifest.lock */,
 				EB92ADD4270DE14B008677B4 /* Sources */,
 				EB92ADD5270DE14B008677B4 /* Frameworks */,
 				EB92ADD6270DE14B008677B4 /* Resources */,
+				78D01FB563B003D940E11F89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +304,7 @@
 			);
 			name = SOPT_iOS_HW1;
 			productName = SOPT_iOS_HW1;
-			productReference = EB92ADD8270DE14B008677B4 /* SOPT_iOS_HW1.app */;
+			productReference = EB92ADD8270DE14B008677B4 /* Documents */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,6 +360,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A409064CDFC9A85E88EF67D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOPT_iOS_HW1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78D01FB563B003D940E11F89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB92ADD4270DE14B008677B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -304,14 +409,21 @@
 			files = (
 				EB92ADDC270DE14B008677B4 /* AppDelegate.swift in Sources */,
 				EB70ACCF271B4E9400981D5D /* NavigationController.swift in Sources */,
+				EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */,
 				EB70AD29272A980800981D5D /* HomeTableViewDataModel.swift in Sources */,
 				EB70AD26272A8E3600981D5D /* HomeTableViewCell.swift in Sources */,
+				EBAFF91A27344E6F0091CC7A /* UserLoginService.swift in Sources */,
+				EBAFF91827344E610091CC7A /* LoginResponseData.swift in Sources */,
 				EB70ACC32718987900981D5D /* HomeVC.swift in Sources */,
 				EB70AD35272BC37200981D5D /* HomeCategoryViewDataModel.swift in Sources */,
+				EB6C40DF2733D956009DE2F2 /* UIViewController + Extension.swift in Sources */,
 				EB70AD32272BC29400981D5D /* HomeCategoryViewCell.swift in Sources */,
+				EBAFF91627344E470091CC7A /* NetworkResult.swift in Sources */,
 				EB70ACCD271898C400981D5D /* TabBarController.swift in Sources */,
 				EB70ACC52718988700981D5D /* ShortsVC.swift in Sources */,
 				EB92ADDE270DE14B008677B4 /* SceneDelegate.swift in Sources */,
+				EB6C40E1273414C2009DE2F2 /* UIView + Extension.swift in Sources */,
+				EBAFF91427344E340091CC7A /* APIConstants.swift in Sources */,
 				EB70ACC72718989300981D5D /* AddVC.swift in Sources */,
 				EB92ADF6270F6757008677B4 /* SignUpVC.swift in Sources */,
 				EB70AD2C272B81EF00981D5D /* HomeVCCollectionViewCell.swift in Sources */,
@@ -464,6 +576,7 @@
 		};
 		EB92ADED270DE14E008677B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +605,7 @@
 		};
 		EB92ADEE270DE14E008677B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

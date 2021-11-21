@@ -24,15 +24,16 @@ class WelcomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setMessageInLabel()
+        print(self.navigationController?.viewControllers.count as Any)
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     //MARK: - Custom Methods
     
     func setMessageInLabel(){
-        if let msg = message{
-            dataLabel.text = "\(msg)님\n환영합니다!"
-            dataLabel.sizeToFit()
-        }
+        let msg = UserDefaults.standard.string(forKey: "nameText")
+        dataLabel.text = "\(String(describing: msg!))님\n환영합니다!"
+        dataLabel.sizeToFit()
     }
     
     @IBAction func goToTabBarSB(_ sender: Any) {
@@ -45,14 +46,11 @@ class WelcomeVC: UIViewController {
     }
 
     @IBAction func goBackToLogin(_ sender: Any) {
-        if viewcontrollers.count == 2 {
-            viewcontrollers[1].navigationController?.popViewController(animated: false)
-        }
-
-        guard let presentingVC = self.presentingViewController as? UINavigationController else {return}
-
-        self.dismiss(animated:true) {
-            presentingVC.popToRootViewController(animated: false)
+        guard let viewControllerStack = self.navigationController?.viewControllers else {return}
+        for viewController in viewControllerStack {
+            if let loginV = viewController as? LoginVC {
+                self.navigationController?.popToViewController(loginV, animated: true)
+            }
         }
     }
 }

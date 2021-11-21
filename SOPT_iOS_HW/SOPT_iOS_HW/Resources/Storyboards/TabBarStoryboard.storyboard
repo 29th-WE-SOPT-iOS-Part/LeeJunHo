@@ -33,6 +33,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="JCg-On-kL9"/>
+                    <connections>
+                        <outlet property="CustomNavigationBar" destination="KV1-WF-Mf4" id="3dp-TZ-yYF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2YV-3r-Z9m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +65,9 @@
                             <constraint firstItem="gSZ-01-rG6" firstAttribute="leading" secondItem="rf8-jY-4GQ" secondAttribute="leading" id="w4k-Su-g0A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CustomNavigationBar" destination="gSZ-01-rG6" id="cQK-kP-ioL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ZG-gu-oar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,6 +97,9 @@
                             <constraint firstItem="265-S6-FCb" firstAttribute="leading" secondItem="xeX-bM-il4" secondAttribute="leading" id="lHt-jz-eDQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CustomNavigationBar" destination="265-S6-FCb" id="6cV-w8-EoR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SM-0Q-qIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,6 +129,9 @@
                             <constraint firstAttribute="trailing" secondItem="sal-00-NIA" secondAttribute="trailing" id="pL8-gZ-QM4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="CustomNavigationBar" destination="sal-00-NIA" id="5Kg-Vd-1dN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XRO-gb-mNz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +140,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="fU5-o5-OB5">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarController" id="dJJ-Be-yOh" customClass="TabBarController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" hidesBottomBarWhenPushed="YES" id="dJJ-Be-yOh" customClass="TabBarController" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hvg-EJ-SPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

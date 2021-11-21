@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zGq-CS-AR4">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -87,6 +87,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ang-NP-N1r" customClass="CustomNavigationBar" customModule="SOPT_iOS_HW1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="375" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2eA-QJ-yzL"/>
                                 </constraints>
@@ -113,13 +116,32 @@
                             <constraint firstItem="lK4-m7-BL4" firstAttribute="top" secondItem="7nW-Wv-Qoa" secondAttribute="bottom" id="zra-SK-8Lk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Lfn-5j-Otc"/>
                     <connections>
+                        <outlet property="CustomNavigationBar" destination="Ang-NP-N1r" id="QWT-TF-6T1"/>
                         <outlet property="HomeCategoryView" destination="EII-U2-NYe" id="r7Y-ud-5S4"/>
                         <outlet property="HomeCollectionView" destination="7nW-Wv-Qoa" id="Gub-fO-1cd"/>
                         <outlet property="HomeTableView" destination="TSa-qP-g8a" id="ZVG-TE-nHE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952.79999999999995" y="78.325123152709367"/>
+        </scene>
+        <!--HomeNVC-->
+        <scene sceneID="djY-FW-zbZ">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="zGq-CS-AR4" customClass="HomeNVC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5h3-UQ-u6n">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="V7m-wD-1qn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZz-rI-5Ed" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10.4" y="78.325123152709367"/>
         </scene>

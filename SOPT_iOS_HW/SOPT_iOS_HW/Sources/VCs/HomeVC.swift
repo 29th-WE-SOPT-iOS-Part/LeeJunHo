@@ -12,6 +12,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var HomeCollectionView: UICollectionView!
     @IBOutlet weak var HomeTableView: UITableView!
     @IBOutlet weak var HomeCategoryView: UICollectionView!
+    @IBOutlet weak var CustomNavigationBar: CustomNavigationBar!
     
     var HomeTableViewContentList: [HomeTableViewContentData] = []
     var HomeCollectionViewContentList: [HomeCollectionViewContentData] = []
@@ -20,16 +21,15 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initHomeTableViewContentList()
-        initHomeCollectionViewContentList()
-        initHomeCategoryViewContentList()
+        initContentList()
+        setDelegate()
         registerXib()
-        HomeCollectionView.dataSource = self
-        HomeCollectionView.delegate = self
-        HomeTableView.dataSource = self
-        HomeTableView.delegate = self
-        HomeCategoryView.dataSource = self
-        HomeCategoryView.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setNavigationController()
+        print(self.navigationController?.viewControllers.count as Any)
     }
     
     func registerXib(){
@@ -43,7 +43,20 @@ class HomeVC: UIViewController {
         HomeCategoryView.register(xibCategoryViewName, forCellWithReuseIdentifier: HomeCategoryViewCell.identifier)
     }
     
-    func initHomeTableViewContentList() {
+    func setDelegate() {
+        HomeCollectionView.dataSource = self
+        HomeCollectionView.delegate = self
+        HomeTableView.dataSource = self
+        HomeTableView.delegate = self
+        HomeCategoryView.dataSource = self
+        HomeCategoryView.delegate = self
+        CustomNavigationBar.delegate = self
+    }
+    
+    func initContentList() {
+        
+        //MARK: - TableViewInit
+        
         HomeTableViewContentList.append(contentsOf: [
             HomeTableViewContentData(title: "1차 iOS 세미나:iOS 컴포넌트 이해, Xcode 기본 사용법, View 화면전환",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전"),
             HomeTableViewContentData(title: "2차 iOS 세미나:AutoLayout,StackView,TabBarController",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전"),
@@ -51,9 +64,9 @@ class HomeVC: UIViewController {
             HomeTableViewContentData(title: "4차 iOS 세미나: CoCoapods & Networking, REST API",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전"),
             HomeTableViewContentData(title: "7차 iOS 세미나 : Animation과 제스쳐, 데이터 전달 심화",subtitle: "WE SOPT ∙ 조회수 100만회 ∙ 3주 전")
         ])
-    }
-    
-    func initHomeCollectionViewContentList() {
+        
+        //MARK: - CollectionViewInit
+        
         HomeCollectionViewContentList.append(contentsOf: [
             HomeCollectionViewContentData(subscLabel: "iOSPart", imageName: "ggamju1"),
             HomeCollectionViewContentData(subscLabel: "AndroidPart", imageName: "ggamju2"),
@@ -62,9 +75,9 @@ class HomeVC: UIViewController {
             HomeCollectionViewContentData(subscLabel: "DesignPart", imageName: "ggamju5"),
             HomeCollectionViewContentData(subscLabel: "PlanPart", imageName: "ggamju6")
         ])
-    }
-    
-    func initHomeCategoryViewContentList() {
+        
+        //MARK: - CategoryViewInit
+        
         let texts: [String] = ["전체", "오늘", "이어서 시청하기", "시청하지 않음", "실시간", "게시물"]
         
         let testLabel = UILabel(frame: .zero)
@@ -83,6 +96,10 @@ class HomeVC: UIViewController {
             HomeCategoryViewContentData(categoryText: "실시간"),
             HomeCategoryViewContentData(categoryText: "게시물"),
         ])
+    }
+    
+    func setNavigationController() {
+        self.navigationController?.isNavigationBarHidden = true
     }
 }
 
@@ -160,3 +177,5 @@ extension HomeVC: UICollectionViewDelegateFlowLayout {
         return 0
     }
 }
+
+
