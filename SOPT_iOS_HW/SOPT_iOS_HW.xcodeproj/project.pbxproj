@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C118160EF5C5BA63E695A34 /* Pods_SOPT_iOS_HW1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */; };
+		EB0187FF2763763E00F51638 /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0187FE2763763E00F51638 /* HomeDetailVC.swift */; };
 		EB606A81273A641900A3C22C /* SignUpResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB606A80273A641900A3C22C /* SignUpResponseData.swift */; };
 		EB6C40D727339592009DE2F2 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */; };
 		EB6C40DB273395BF009DE2F2 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */; };
@@ -50,6 +51,7 @@
 		9771650179FBDC6064C324EE /* Pods-SOPT_iOS_HW1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.debug.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.debug.xcconfig"; sourceTree = "<group>"; };
 		BFC074384B56D30A7B208995 /* Pods_SOPT_iOS_HW1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPT_iOS_HW1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23116497AFA49EE43EA0244 /* Pods-SOPT_iOS_HW1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPT_iOS_HW1.release.xcconfig"; path = "Target Support Files/Pods-SOPT_iOS_HW1/Pods-SOPT_iOS_HW1.release.xcconfig"; sourceTree = "<group>"; };
+		EB0187FE2763763E00F51638 /* HomeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
 		EB606A80273A641900A3C22C /* SignUpResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpResponseData.swift; sourceTree = "<group>"; };
 		EB6C40D627339592009DE2F2 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				EB6C40DA273395BF009DE2F2 /* CustomNavigationBar.xib */,
 				EB70ACCC271898C400981D5D /* TabBarController.swift */,
 				EB70ACC22718987900981D5D /* HomeVC.swift */,
+				EB0187FE2763763E00F51638 /* HomeDetailVC.swift */,
 				EB70ACC42718988700981D5D /* ShortsVC.swift */,
 				EB70ACC62718989300981D5D /* AddVC.swift */,
 				EB70ACC8271898A000981D5D /* SubscVC.swift */,
@@ -431,6 +434,7 @@
 				EB70ACC9271898A000981D5D /* SubscVC.swift in Sources */,
 				EB6C40D727339592009DE2F2 /* CustomNavigationBar.swift in Sources */,
 				EB92ADF2270E1343008677B4 /* WelcomeVC.swift in Sources */,
+				EB0187FF2763763E00F51638 /* HomeDetailVC.swift in Sources */,
 				EB70ACCB271898AC00981D5D /* LibraryVC.swift in Sources */,
 				EB92ADF0270E132E008677B4 /* LoginVC.swift in Sources */,
 			);
