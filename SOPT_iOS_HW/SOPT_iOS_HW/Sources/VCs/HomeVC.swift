@@ -53,6 +53,8 @@ class HomeVC: UIViewController {
         CustomNavigationBar.delegate = self
     }
     
+
+    
     func initContentList() {
         
         //MARK: - TableViewInit
@@ -119,6 +121,7 @@ extension HomeVC: UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier) as? HomeTableViewCell else {return UITableViewCell()}
         
         cell.setData(appData: HomeTableViewContentList[indexPath.row])
+        cell.delegate = self
         return cell
     }
 }

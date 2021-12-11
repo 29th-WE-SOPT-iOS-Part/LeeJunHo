@@ -19,6 +19,17 @@ extension UIViewController: CustomViewDelegate {
     }
 }
 
+extension UIViewController: homeTVDelegate {
+    func tapToNextVC() {
+        print("3")
+        
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+}
+
 extension UIViewController {
     func makeAlert(title: String,
                    message: String,

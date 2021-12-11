@@ -10,6 +10,8 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
 
     static let identifier = "HomeTableViewCell"
+    public var delegate: homeTVDelegate?
+    
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
@@ -38,6 +40,11 @@ class HomeTableViewCell: UITableViewCell {
     }
 
     @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
-        print("tap 했다")
+        self.delegate?.tapToNextVC()
     }
+}
+
+
+protocol homeTVDelegate {
+    func tapToNextVC()
 }
