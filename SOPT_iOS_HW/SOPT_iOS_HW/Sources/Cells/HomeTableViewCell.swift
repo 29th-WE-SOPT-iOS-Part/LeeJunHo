@@ -35,16 +35,10 @@ class HomeTableViewCell: UITableViewCell {
     
     func setTapGesture() {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapImageView(gestureRecognizer:)))
-        
         mainImageView.addGestureRecognizer(tapRecognizer)
     }
 
     @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
         self.delegate?.tapToNextVC()
     }
-}
-
-
-protocol homeTVDelegate {
-    func tapToNextVC()
 }
