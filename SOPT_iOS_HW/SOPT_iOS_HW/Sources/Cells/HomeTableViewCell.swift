@@ -39,6 +39,6 @@ class HomeTableViewCell: UITableViewCell {
     }
 
     @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
-        self.delegate?.tapToNextVC()
+        self.delegate?.tapToNextVC(image: mainImageView.image ?? UIImage(), title: titleLabel.text ?? "", description: subtitleLabel.text ?? "")
     }
 }

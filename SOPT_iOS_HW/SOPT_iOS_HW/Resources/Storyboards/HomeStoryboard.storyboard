@@ -194,6 +194,11 @@
                             <constraint firstItem="SNj-XF-pNw" firstAttribute="top" secondItem="tc9-in-TRs" secondAttribute="top" id="nOs-aT-FdU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="Hw6-JA-VfA" id="omB-Sg-UPk"/>
+                        <outlet property="detailImageView" destination="SNj-XF-pNw" id="Wzo-zn-RHh"/>
+                        <outlet property="detailTitleLabel" destination="yVT-o1-kVn" id="tgs-ho-bTl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBc-XH-Xrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

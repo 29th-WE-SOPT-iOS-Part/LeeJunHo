@@ -20,13 +20,17 @@ extension UIViewController: CustomViewDelegate {
 }
 
 extension UIViewController: homeTVDelegate {
-    func tapToNextVC() {
+    func tapToNextVC(image: UIImage, title: String, description: String) {
         print("3")
         
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else {return}
         
         nextVC.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(nextVC, animated: true)
+        self.present(nextVC, animated: true, completion: {
+            nextVC.detailTitleLabel.text = title
+            nextVC.detailImageView.image = image
+            nextVC.detailDescriptionLabel.text = description
+        })
     }
 }
 
@@ -47,7 +51,7 @@ extension UIViewController {
 }
 
 protocol homeTVDelegate {
-    func tapToNextVC()
+    func tapToNextVC(image: UIImage, title: String, description: String)
 }
 
 protocol CustomViewDelegate {
