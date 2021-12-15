@@ -18,4 +18,8 @@ class HomeDetailVC: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    @IBAction func tapToDismiss(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

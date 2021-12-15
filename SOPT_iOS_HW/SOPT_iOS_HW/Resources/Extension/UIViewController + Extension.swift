@@ -21,8 +21,6 @@ extension UIViewController: CustomViewDelegate {
 
 extension UIViewController: homeTVDelegate {
     func tapToNextVC(image: UIImage, title: String, description: String) {
-        print("3")
-        
         guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else {return}
         
         nextVC.modalPresentationStyle = .fullScreen
