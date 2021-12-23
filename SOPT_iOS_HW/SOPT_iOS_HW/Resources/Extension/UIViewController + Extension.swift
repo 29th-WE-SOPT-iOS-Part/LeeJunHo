@@ -19,6 +19,19 @@ extension UIViewController: CustomViewDelegate {
     }
 }
 
+extension UIViewController: homeTVDelegate {
+    func tapToNextVC(image: UIImage, title: String, description: String) {
+        guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeDetailVC") as? HomeDetailVC else {return}
+        
+        nextVC.modalPresentationStyle = .fullScreen
+        self.present(nextVC, animated: true, completion: {
+            nextVC.detailTitleLabel.text = title
+            nextVC.detailImageView.image = image
+            nextVC.detailDescriptionLabel.text = description
+        })
+    }
+}
+
 extension UIViewController {
     func makeAlert(title: String,
                    message: String,
@@ -33,4 +46,12 @@ extension UIViewController {
         
         self.present(alertViewController, animated: true, completion: completion)
     }
+}
+
+protocol homeTVDelegate {
+    func tapToNextVC(image: UIImage, title: String, description: String)
+}
+
+protocol CustomViewDelegate {
+    func touchUpToGoLogin()
 }

@@ -10,17 +10,22 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
 
     static let identifier = "HomeTableViewCell"
+    public var delegate: homeTVDelegate?
+    
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var mainImageView: UIImageView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        setTapGesture()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        setTapGesture()
     }
     
     func setData(appData: HomeTableViewContentData) {
@@ -28,4 +33,12 @@ class HomeTableViewCell: UITableViewCell {
         subtitleLabel.text = appData.subtitle
     }
     
+    func setTapGesture() {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapImageView(gestureRecognizer:)))
+        mainImageView.addGestureRecognizer(tapRecognizer)
+    }
+
+    @objc func tapImageView(gestureRecognizer: UIGestureRecognizer){
+        self.delegate?.tapToNextVC(image: mainImageView.image ?? UIImage(), title: titleLabel.text ?? "", description: subtitleLabel.text ?? "")
+    }
 }

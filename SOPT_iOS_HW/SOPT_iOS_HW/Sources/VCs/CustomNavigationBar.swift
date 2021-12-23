@@ -43,6 +43,3 @@ class CustomNavigationBar: UIView {
     }
 }
 
-protocol CustomViewDelegate {
-    func touchUpToGoLogin()
-}

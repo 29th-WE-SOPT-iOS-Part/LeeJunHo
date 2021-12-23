@@ -128,6 +128,91 @@
             </objects>
             <point key="canvasLocation" x="952.79999999999995" y="78.325123152709367"/>
         </scene>
+        <!--Home DetailVC-->
+        <scene sceneID="E5S-rW-2e3">
+            <objects>
+                <viewController storyboardIdentifier="HomeDetailVC" id="iq2-bW-GmJ" customClass="HomeDetailVC" customModule="SOPT_iOS_HW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tc9-in-TRs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wesoptiOSPart" translatesAutoresizingMaskIntoConstraints="NO" id="SNj-XF-pNw">
+                                <rect key="frame" x="0.0" y="44" width="375" height="212"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="212" id="nYo-SZ-Qaa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVT-o1-kVn">
+                                <rect key="frame" x="10" y="268" width="349" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="270" id="YlG-wv-4nt"/>
+                                    <constraint firstAttribute="height" constant="36" id="okP-8X-UdY"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label sdafsdf">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="SFProDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hw6-JA-VfA">
+                                <rect key="frame" x="10" y="308" width="349" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="05K-cE-HWx"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SFProDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnS-DZ-4fa">
+                                <rect key="frame" x="0.0" y="51" width="40" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Wef-io-FOq"/>
+                                    <constraint firstAttribute="width" constant="40" id="eze-NG-993"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.down" catalog="system"/>
+                                <connections>
+                                    <action selector="tapToDismiss:" destination="iq2-bW-GmJ" eventType="touchUpInside" id="heo-P5-YOa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dlb-1a-PTa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yVT-o1-kVn" firstAttribute="leading" secondItem="tc9-in-TRs" secondAttribute="leading" constant="10" id="2et-B8-jgd"/>
+                            <constraint firstItem="SNj-XF-pNw" firstAttribute="leading" secondItem="tc9-in-TRs" secondAttribute="leading" id="4y1-LQ-uX3"/>
+                            <constraint firstItem="Hw6-JA-VfA" firstAttribute="leading" secondItem="yVT-o1-kVn" secondAttribute="leading" id="563-GX-2iL"/>
+                            <constraint firstAttribute="trailing" secondItem="SNj-XF-pNw" secondAttribute="trailing" id="6Ek-XF-ZhF"/>
+                            <constraint firstItem="Hw6-JA-VfA" firstAttribute="top" secondItem="yVT-o1-kVn" secondAttribute="bottom" constant="4.0800000000000001" id="Ias-vM-fix"/>
+                            <constraint firstItem="yVT-o1-kVn" firstAttribute="top" secondItem="SNj-XF-pNw" secondAttribute="bottom" constant="12.02" id="jak-on-BqS"/>
+                            <constraint firstItem="Hw6-JA-VfA" firstAttribute="width" secondItem="yVT-o1-kVn" secondAttribute="width" id="kAS-jn-7HP"/>
+                            <constraint firstItem="SNj-XF-pNw" firstAttribute="top" secondItem="WnS-DZ-4fa" secondAttribute="bottom" constant="-42" id="kbR-du-iPw"/>
+                            <constraint firstItem="SNj-XF-pNw" firstAttribute="top" secondItem="dlb-1a-PTa" secondAttribute="top" id="nOs-aT-FdU"/>
+                            <constraint firstItem="WnS-DZ-4fa" firstAttribute="leading" secondItem="dlb-1a-PTa" secondAttribute="leading" id="oml-mA-DAy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="Hw6-JA-VfA" id="omB-Sg-UPk"/>
+                        <outlet property="detailImageView" destination="SNj-XF-pNw" id="Wzo-zn-RHh"/>
+                        <outlet property="detailTitleLabel" destination="yVT-o1-kVn" id="tgs-ho-bTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBc-XH-Xrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="758.86699507389164"/>
+        </scene>
         <!--HomeNVC-->
         <scene sceneID="djY-FW-zbZ">
             <objects>
@@ -147,6 +232,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
+        <image name="wesoptiOSPart" width="375" height="212"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
